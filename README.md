@@ -35,6 +35,7 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 | Name | Description |
 |------|-------------|
 | [Overnight mini-App Builder](usecases/overnight-mini-app-builder.md) | Wake up to a fresh micro-app idea, built and ready to try |
+| [Private Landing Page](usecases/private-landing-page.md) | Deploy a landing page with built-in auth on Cloudflare Workers — no email required, agent-friendly. |
 | [YouTube Content Pipeline](usecases/youtube-content-pipeline.md) | Automate video idea scouting, research, and tracking for a YouTube channel. |
 
 ## Productivity
