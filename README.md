@@ -11,7 +11,7 @@
 <br />
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Use Cases](https://img.shields.io/badge/usecases-13-blue?style=flat-square)
+![Use Cases](https://img.shields.io/badge/usecases-14-blue?style=flat-square)
 ![Last Update](https://img.shields.io/github/last-commit/hesamsheikh/awesome-openclaw-usecases?label=Last%20Update&style=flat-square)
 </div>
 
@@ -35,6 +35,7 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 | Name | Description |
 |------|-------------|
 | [Overnight mini-App Builder](usecases/overnight-mini-app-builder.md) | Wake up to a fresh micro-app idea, built and ready to try |
+| [OpenClawLog](usecases/openclawlog.md) | AI-centric WordPress management and publishing platform with agent integration and automated publishing workflows. |
 | [YouTube Content Pipeline](usecases/youtube-content-pipeline.md) | Automate video idea scouting, research, and tracking for a YouTube channel. |
 
 ## Productivity
