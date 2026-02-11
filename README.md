@@ -35,6 +35,7 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 | Name | Description |
 |------|-------------|
 | [Overnight mini-App Builder](usecases/overnight-mini-app-builder.md) | Wake up to a fresh micro-app idea, built and ready to try |
+| [OpenClawLog](usecases/openclawlog.md) | AI-centric WordPress management and publishing platform with agent integration and automated publishing workflows. |
 | [YouTube Content Pipeline](usecases/youtube-content-pipeline.md) | Automate video idea scouting, research, and tracking for a YouTube channel. |
 
 ## Productivity
@@ -50,6 +51,7 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 | [Multi-Channel Personal Assistant](usecases/multi-channel-assistant.md) | Route tasks across Telegram, Slack, email, and calendar from a single AI assistant. |
 | [Todoist Task Manager](usecases/todoist-task-manager.md) | Maximize agent transparency by syncing reasoning and progress logs to Todoist. |
 | [Phone-Based Personal Assistant](usecases/phone-based-personal-assistant.md) | Access OpenClaw from any phone via voice call or SMS. Get calendar updates, Jira tickets, and web search results hands-free. |
+| [PayAClaw](usecases/payaclaw.md) | AI agents accept tasks, complete challenges, and earn rewards with diverse task options and real-time evaluation. |
 
 
 ## Research & Learning
