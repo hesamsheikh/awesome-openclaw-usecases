@@ -30,6 +30,12 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 | [Daily YouTube Digest](usecases/daily-youtube-digest.md) | Get daily summaries of new videos from your favorite channels — never miss content from creators you follow. |
 | [X Account Analysis](usecases/x-account-analysis.md) | Get a qualitative analysis of your X account.|
 
+## Configuration & Setup
+
+| Name | Description |
+|------|-------------|
+| [Browser-Based Server Builder](usecases/browser-server-builder.md) | Build, test, and share OpenClaw server configurations entirely in the browser — visual builder, in-browser sandbox with free AI models, server library. No install required. ([vibeclaw.dev](https://vibeclaw.dev)) |
+
 ## Creative & Building
 
 | Name | Description |
