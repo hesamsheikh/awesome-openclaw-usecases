@@ -128,7 +128,7 @@ podman exec "$CTR" touch /agent-workspace/.test                      # Writable
 
 ## Full Guide
 
-The complete 13-section setup guide with all bind mounts, shim configs, systemd units, backup scripts, and troubleshooting is available at:
+The complete 14-section setup guide with all bind mounts, shim configs, systemd units, backup scripts, known limitations, and troubleshooting is available at:
 
 **[openclaw-fortress](https://github.com/mzkri/openclaw-fortress)** — Production hardening for OpenClaw sandboxed agent execution.
 
