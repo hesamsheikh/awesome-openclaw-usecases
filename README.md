@@ -45,6 +45,7 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 |------|-------------|
 | [n8n Workflow Orchestration](usecases/n8n-workflow-orchestration.md) | Delegate API calls to n8n workflows via webhooks — the agent never touches credentials, and every integration is visual and lockable. |
 | [Self-Healing Home Server](usecases/self-healing-home-server.md) | Run an always-on infrastructure agent with SSH access, automated cron jobs, and self-healing capabilities across your home network. |
+| [Encrypted Workspace Backup](usecases/encrypted-workspace-backup.md) | Automated, encrypted off-site backups of OpenClaw workspace files (SOUL.md, MEMORY.md, etc.) using soul-upload.com with client-side AES-256-CBC encryption. |
 
 ## Productivity
 
