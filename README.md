@@ -54,6 +54,7 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 
 | Name | Description |
 |------|-------------|
+| [ClawBridge](usecases/clawbridge.md) | The OpenClaw Mobile Dashboard. Monitor agent's real-time thoughts, actions, track token costs, and manage tasks from anywhere using your pocket-sized Mission Control. |
 | [Autonomous Project Management](usecases/autonomous-project-management.md) | Coordinate multi-agent projects using STATE.yaml pattern — subagents work in parallel without orchestrator overhead. |
 | [Multi-Channel AI Customer Service](usecases/multi-channel-customer-service.md) | Unify WhatsApp, Instagram, Email, and Google Reviews in one AI-powered inbox with 24/7 auto-responses. |
 | [Phone-Based Personal Assistant](usecases/phone-based-personal-assistant.md) | Access your AI agent via phone calls, hands-free voice assistance for any phone. |
