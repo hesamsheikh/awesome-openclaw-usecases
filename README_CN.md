@@ -11,7 +11,7 @@
 <br />
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Use Cases](https://img.shields.io/badge/usecases-29-blue?style=flat-square)
+![Use Cases](https://img.shields.io/badge/usecases-30-blue?style=flat-square)
 ![Last Update](https://img.shields.io/github/last-commit/hesamsheikh/awesome-openclaw-usecases?label=Last%20Update&style=flat-square)
 </div>
 
@@ -79,6 +79,7 @@
 | [个人知识库 (RAG)](usecases/knowledge-base-rag.md) | 通过将 URL、推文和文章拖入聊天来构建可搜索的知识库。 |
 | [市场研究与产品工厂](usecases/market-research-product-factory.md) | 使用 Last 30 Days 技能从 Reddit 和 X 挖掘真实痛点，然后让 OpenClaw 构建解决它们的 MVP。 |
 | [语义记忆搜索](usecases/semantic-memory-search.md) | 使用混合检索和自动同步，为你的 OpenClaw markdown 记忆文件添加向量驱动的语义搜索。 |
+| [DataClaw：将对话历史导出至 Hugging Face](usecases/dataclaw-dataset-export.md) | 一键解析、脱敏并将 OpenClaw 会话日志作为结构化数据集发布到 Hugging Face。 |
 
 ## 金融与交易
 
