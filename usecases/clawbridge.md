@@ -21,7 +21,6 @@ curl -sL https://clawbridge.app/install.sh | bash
 ```
 
 ## Skills Needed
-- `web-search-plus` (Optional, for advanced monitoring)
 - `message` (For notifications)
 
 ## Related Links
