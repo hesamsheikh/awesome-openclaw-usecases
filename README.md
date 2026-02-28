@@ -61,6 +61,9 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 | [Inbox De-clutter](usecases/inbox-declutter.md) | Summarize Newsletters and send you a digest as an email. |
 | [Personal CRM](usecases/personal-crm.md) | Automatically discover and track contacts from your email and calendar, with natural language queries. |
 | [Health & Symptom Tracker](usecases/health-symptom-tracker.md) | Track food intake and symptoms to identify triggers, with scheduled check-in reminders. |
+| [Biometric Health Intelligence](usecases/biometric-health-intelligence.md) | Cross-correlate Apple Watch, CGM, nutrition, and life context data via Fulcra API to run theory-driven health investigations with proactive alerts. |
+| [Biometric Morning Briefing](usecases/biometric-morning-briefing.md) | Wake up to a briefing that leads with how you actually slept (sleep stages, HRV, glucose), then adapts calendar and priorities based on recovery state. |
+| [Automated Meeting CRM & Intel](usecases/automated-meeting-crm.md) | Auto-build contact profiles from calendar events, enrich with web research, and deliver pre-meeting dossiers with 30-minute advance alerts. |
 | [Multi-Channel Personal Assistant](usecases/multi-channel-assistant.md) | Route tasks across Telegram, Slack, email, and calendar from a single AI assistant. |
 | [Project State Management](usecases/project-state-management.md) | Event-driven project tracking with automatic context capture, replacing static Kanban boards. |
 | [Dynamic Dashboard](usecases/dynamic-dashboard.md) | Real-time dashboard with parallel data fetching from APIs, databases, and social media. |
