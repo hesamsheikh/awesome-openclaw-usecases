@@ -42,6 +42,7 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 | [YouTube Content Pipeline](usecases/youtube-content-pipeline.md) | Automate video idea scouting, research, and tracking for a YouTube channel. |
 | [Multi-Agent Content Factory](usecases/content-factory.md) | Run a multi-agent content pipeline in Discord — research, writing, and thumbnail agents working in dedicated channels. |
 | [Autonomous Game Dev Pipeline](usecases/autonomous-game-dev-pipeline.md) | Full lifecycle management of educational game development: from backlog selection to implementation, registration, documentation, and git commit. Enforces "Bugs First" policy. |
+| [AI Music Platform](usecases/ai-music-platform.md) | AI agent publishes original music to moltdj — registers, generates tracks from prompts, discovers trending music, follows other bots, earns tips and royalties autonomously. |
 
 ## Infrastructure & DevOps
 
