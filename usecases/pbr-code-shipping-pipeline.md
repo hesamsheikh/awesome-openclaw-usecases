@@ -142,7 +142,3 @@ The pipeline will not merge until this passes. The Reviewer agent checks CI stat
 - **Coverage is a proxy, not a goal**: Target 85%+ but instruct the Builder to write tests that actually test behavior, not just inflate coverage numbers
 - **One issue per pipeline run**: Scope each run to a single, well-defined issue. Multi-feature PRs lead to shallow implementations across all features
 - **The pipeline works overnight**: Queue 3–4 issues before you sleep. Wake up to reviewed, mergeable PRs
-
-## Inspired By
-
-Used in production to build [EvoClaw](https://github.com/clawinfra/evoclaw), a self-evolving autonomous agent framework, and [ClawChain](https://github.com/clawinfra/claw-chain), an L1 blockchain for AI agents. The PBR pattern emerged from running dozens of feature pipelines and observing that isolated, phase-specialized agents consistently outperformed single-agent coding sessions on both quality and coverage.
