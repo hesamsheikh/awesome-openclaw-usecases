@@ -78,6 +78,7 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 | [AI Earnings Tracker](usecases/earnings-tracker.md) | Track tech/AI earnings reports with automated previews, alerts, and detailed summaries. |
 | [Personal Knowledge Base (RAG)](usecases/knowledge-base-rag.md) | Build a searchable knowledge base by dropping URLs, tweets, and articles into chat. |
 | [Market Research & Product Factory](usecases/market-research-product-factory.md) | Mine Reddit and X for real pain points using the Last 30 Days skill, then have OpenClaw build MVPs that solve them. |
+| [Pre-Build Idea Validator](usecases/pre-build-idea-validator.md) | Automatically scan GitHub, HN, npm, PyPI, and Product Hunt before building anything new — stop if the space is crowded, proceed if it's open. |
 | [Semantic Memory Search](usecases/semantic-memory-search.md) | Add vector-powered semantic search to your OpenClaw markdown memory files with hybrid retrieval and auto-sync. |
 
 ## Finance & Trading
