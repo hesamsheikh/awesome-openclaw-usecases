@@ -11,8 +11,12 @@
 <br />
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Use Cases](https://img.shields.io/badge/usecases-33-blue?style=flat-square)
+![Use Cases](https://img.shields.io/badge/usecases-31-blue?style=flat-square)
 ![Last Update](https://img.shields.io/github/last-commit/hesamsheikh/awesome-openclaw-usecases?label=Last%20Update&style=flat-square)
+[![Follow on X](https://img.shields.io/badge/Follow%20on-X-000000?style=flat-square&logo=x)](https://x.com/Hesamation)
+[![Discord](https://img.shields.io/badge/Discord-Open%20Source%20AI%20Builders-5865F2?style=flat-square&logo=discord&logoColor=white)](https://discord.gg/vtJykN3t)
+
+<p><sub><a href="https://x.com/Hesamation">Say hello on X.</a></sub></p>
 </div>
 
 # Awesome OpenClaw Use Cases
@@ -20,7 +24,6 @@
 Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **ways it can improve your life**. This is a community collection of real-life use cases for [OpenClaw](https://github.com/openclaw/openclaw).
 
 > **Warning:** OpenClaw skills and third-party dependencies referenced here may have critical security vulnerabilities. Many use cases link to community-built skills, plugins, and external repos that have **not been audited by the maintainer of this list**. Always review skill source code, check requested permissions, and avoid hardcoding API keys or credentials. You are solely responsible for your own security.
-
 
 ## Social Media
 
@@ -78,6 +81,7 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 | [AI Earnings Tracker](usecases/earnings-tracker.md) | Track tech/AI earnings reports with automated previews, alerts, and detailed summaries. |
 | [Personal Knowledge Base (RAG)](usecases/knowledge-base-rag.md) | Build a searchable knowledge base by dropping URLs, tweets, and articles into chat. |
 | [Market Research & Product Factory](usecases/market-research-product-factory.md) | Mine Reddit and X for real pain points using the Last 30 Days skill, then have OpenClaw build MVPs that solve them. |
+| [Pre-Build Idea Validator](usecases/pre-build-idea-validator.md) | Automatically scan GitHub, HN, npm, PyPI, and Product Hunt before building anything new — stop if the space is crowded, proceed if it's open. |
 | [Semantic Memory Search](usecases/semantic-memory-search.md) | Add vector-powered semantic search to your OpenClaw markdown memory files with hybrid retrieval and auto-sync. |
 
 ## Finance & Trading

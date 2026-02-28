@@ -81,6 +81,40 @@ in real-time as you complete tasks.
 - For overnight app building specifically: explicitly tell it to build MVPs and not to overcomplicate. You'll wake up every morning with a new surprise.
 - This compounds over time — the agent learns what kinds of tasks are most helpful and adjusts.
 
+## Pitfalls & Patterns (Learned in Production)
+
+### ⚠️ Race Condition: Sub-Agents Editing Shared Files
+
+When you run this workflow with sub-agents, both the main session and spawned sub-agents may try to update the same task file (e.g., your Kanban/AUTONOMOUS.md). This causes silent failures.
+
+**Why it happens:** OpenClaw's `edit` tool requires an exact `oldText` match. If a sub-agent updates a line between the time your main session reads the file and tries to edit it, the text no longer matches — the edit silently fails.
+
+**The fix: split your task file into two roles:**
+
+1. **`AUTONOMOUS.md`** — stays small and clean. Contains only goals + open backlog. Only the main session touches this. Sub-agents never edit it.
+
+2. **`memory/tasks-log.md`** — append-only log. Sub-agents only ever *add new lines at the bottom*. Never edit existing lines.
+
+```markdown
+# tasks-log.md — Completed Tasks (append-only)
+# Sub-agents: always append to the END. Never edit existing lines.
+
+### 2026-02-24
+- ✅ TASK-001: Research competitors → research/competitors.md
+- ✅ TASK-002: Draft blog post → drafts/post-1.md
+```
+
+This pattern is borrowed from Git's commit log: you never rewrite history, you only add new commits. It eliminates race conditions entirely and has a bonus: `AUTONOMOUS.md` stays small, so it costs fewer tokens every time it's loaded in a heartbeat.
+
+**Rule to give your agent:** In sub-agent spawn instructions, always include:
+> "When done, append a ✅ line to `memory/tasks-log.md`. Never edit `AUTONOMOUS.md` directly."
+
+### 💡 Keep AUTONOMOUS.md Token-Light
+
+The task tracking file gets loaded on every heartbeat poll. If it grows unbounded with completed tasks, you'll burn tokens unnecessarily. 
+
+Keep `AUTONOMOUS.md` under ~50 lines: goals (one-liners) + open backlog only. Archive everything completed to a separate file that is only read on-demand.
+
 ## Based On
 
 Inspired by [Alex Finn](https://www.youtube.com/watch?v=UTCi_q6iuCM&t=414s) and his [video on life-changing OpenClaw use cases](https://www.youtube.com/watch?v=41_TNGDDnfQ).
