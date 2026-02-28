@@ -70,6 +70,8 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 | [Custom Morning Brief](usecases/custom-morning-brief.md) | Get a fully customized daily briefing — news, tasks, content drafts, and AI-recommended actions — texted to you every morning. |
 | [Second Brain](usecases/second-brain.md) | Text anything to your bot to remember it, then search through all your memories in a custom Next.js dashboard. |
 | [Event Guest Confirmation](usecases/event-guest-confirmation.md) | Call a list of event guests one-by-one to confirm attendance, collect notes, and compile a summary — fully automated via AI voice calls. |
+| [Ambient Meeting Intelligence](usecases/ambient-meeting-intelligence.md) | Wear an Omi pendant, auto-capture meetings, build a knowledge graph, extract commitments, and get pre-meeting briefings — zero effort. |
+| [Voice-Activated Agent with Context](usecases/voice-command-assistant.md) | Wake word triggers voice commands that resolve against your personal knowledge graph — "email Rob about the budget" just works. |
 
 ## Research & Learning
 
@@ -79,6 +81,7 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 | [Personal Knowledge Base (RAG)](usecases/knowledge-base-rag.md) | Build a searchable knowledge base by dropping URLs, tweets, and articles into chat. |
 | [Market Research & Product Factory](usecases/market-research-product-factory.md) | Mine Reddit and X for real pain points using the Last 30 Days skill, then have OpenClaw build MVPs that solve them. |
 | [Semantic Memory Search](usecases/semantic-memory-search.md) | Add vector-powered semantic search to your OpenClaw markdown memory files with hybrid retrieval and auto-sync. |
+| [Train Your Agent from Audio](usecases/train-agent-from-audio.md) | Play YouTube lectures, podcasts, or courses in your browser — your agent builds a searchable knowledge graph from what it hears. |
 
 ## Finance & Trading
 
