@@ -89,6 +89,7 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 | Name | Description |
 |------|-------------|
 | [Polymarket Autopilot](usecases/polymarket-autopilot.md) | Automated paper trading on prediction markets with backtesting, strategy analysis, and daily performance reports. |
+| [Prediction Market Paper Trading](usecases/polymarket-paper-trading.md) | Install one skill — your agent gets $10k paper money, trades prediction markets autonomously, and competes on a leaderboard. |
 
 ## 🤝 Contributing
 
