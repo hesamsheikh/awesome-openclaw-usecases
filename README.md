@@ -34,6 +34,12 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 | [X Account Analysis](usecases/x-account-analysis.md) | Get a qualitative analysis of your X account.|
 | [Multi-Source Tech News Digest](usecases/multi-source-tech-news-digest.md) | Automatically aggregate and deliver quality-scored tech news from 109+ sources (RSS, Twitter/X, GitHub, web search) via natural language. |
 
+## Configuration & Setup
+
+| Name | Description |
+|------|-------------|
+| [Browser-Based Server Builder](usecases/browser-server-builder.md) | Build, test, and share OpenClaw server configurations entirely in the browser — visual builder, in-browser sandbox with free AI models, server library. No install required. ([vibeclaw.dev](https://vibeclaw.dev)) |
+
 ## Creative & Building
 
 | Name | Description |
