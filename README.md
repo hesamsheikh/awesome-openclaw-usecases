@@ -90,6 +90,12 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 |------|-------------|
 | [Polymarket Autopilot](usecases/polymarket-autopilot.md) | Automated paper trading on prediction markets with backtesting, strategy analysis, and daily performance reports. |
 
+## Security & Guardrails
+
+| Name | Description |
+|------|-------------|
+| [APort Agent Guardrails](https://github.com/aporthq/aport-agent-guardrails) | Pre-action authorization for OpenClaw; every tool call checked before it runs. Allowlist + 40+ blocked patterns, local or API. Setup: `npx @aporthq/agent-guardrails` |
+
 ## 🤝 Contributing
 
 We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
