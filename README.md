@@ -89,6 +89,7 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 | Name | Description |
 |------|-------------|
 | [Polymarket Autopilot](usecases/polymarket-autopilot.md) | Automated paper trading on prediction markets with backtesting, strategy analysis, and daily performance reports. |
+| [Statistical Edge Discovery](usecases/statistical-edge-discovery.md) | Turn any trading idea into a statistically validated edge with institutional-grade guardrails — K-tracking, sacred OOS testing, event studies, and overfitting prevention. No quant background needed. ~3–4 validated edges per hour. |
 
 ## 🤝 Contributing
 
