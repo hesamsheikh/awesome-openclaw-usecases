@@ -33,7 +33,7 @@
 | [每日 Reddit 摘要](usecases/daily-reddit-digest.md) | 根据你的偏好，总结你喜爱的 subreddit 的精选摘要。 |
 | [每日 YouTube 摘要](usecases/daily-youtube-digest.md) | 获取你关注频道的每日新视频摘要 —— 不错过你关注创作者的任何内容。 |
 | [X 账号分析](usecases/x-account-analysis.md) | 获取你的 X 账号的定性分析。|
-| [多源科技新闻摘要](usecases/multi-source-tech-news-digest.md) | 自动聚合和分发来自 109+ 来源（RSS、Twitter/X、GitHub、网页搜索）的质量评分科技新闻。 |
+| [多源科技新闻摘要](usecases/multi-source-tech-news-digest.md) | 一句话安装的科技日报 — 内置 150+ 数据源，6 层采集（RSS、Twitter/X、GitHub、GitHub Trending、Reddit、Web 搜索），质量评分 + 文章全文增强 + 多格式推送。开箱即用，支持自定义扩展数据源。 |
 
 ## 创意与构建
 
