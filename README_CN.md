@@ -11,7 +11,7 @@
 <br />
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Use Cases](https://img.shields.io/badge/usecases-29-blue?style=flat-square)
+![Use Cases](https://img.shields.io/badge/usecases-30-blue?style=flat-square)
 ![Last Update](https://img.shields.io/github/last-commit/hesamsheikh/awesome-openclaw-usecases?label=Last%20Update&style=flat-square)
 </div>
 
@@ -67,6 +67,7 @@
 | [基于电话的个人助理](usecases/phone-based-personal-assistant.md) | 通过语音通话或短信从任何手机访问 OpenClaw。免提获取日历更新、Jira 工单和网页搜索结果。 |
 | [家庭日历与家务助理](usecases/family-calendar-household-assistant.md) | 将所有家庭日历聚合到早间简报中，监控消息以获取预约，并管理家庭库存。 |
 | [多智能体专业团队](usecases/multi-agent-team.md) | 通过单个 Telegram 聊天，将多个专业智能体（战略、开发、营销、业务）作为协调团队运行。 |
+| [把 OpenClaw 当桌面 Cowork](usecases/aionui-cowork-desktop.md) | 在桌面 Cowork 应用中使用 OpenClaw：统一界面、多智能体、MCP 一次配置，支持 WebUI/Telegram/Lark/钉钉。OpenClaw 连不上时，可通过 Telegram 或 WebUI 远程使用内置的 OpenClaw 部署专家进行安装、检测与修复。 |
 | [定制早间简报](usecases/custom-morning-brief.md) | 获取完全定制的每日简报 —— 新闻、任务、内容草稿和 AI 推荐的操作 —— 每天早上通过短信发送给你。 |
 | [第二大脑](usecases/second-brain.md) | 向机器人发送任何内容来记住它，然后在自定义的 Next.js 仪表板中搜索你的所有记忆。 |
 | [活动嘉宾确认](usecases/event-guest-confirmation.md) | 逐一呼叫活动嘉宾名单以确认出席、收集备注并编译摘要 —— 通过 AI 语音通话完全自动化。 |
