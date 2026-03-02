@@ -11,7 +11,7 @@
 <br />
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Use Cases](https://img.shields.io/badge/usecases-34-blue?style=flat-square)
+![Use Cases](https://img.shields.io/badge/usecases-35-blue?style=flat-square)
 ![Last Update](https://img.shields.io/github/last-commit/hesamsheikh/awesome-openclaw-usecases?label=Last%20Update&style=flat-square)
 [![Follow on X](https://img.shields.io/badge/Follow%20on-X-000000?style=flat-square&logo=x)](https://x.com/Hesamation)
 [![Discord](https://img.shields.io/badge/Discord-Open%20Source%20AI%20Builders-5865F2?style=flat-square&logo=discord&logoColor=white)](https://discord.gg/vtJykN3t)
@@ -68,6 +68,7 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 | [Phone-Based Personal Assistant](usecases/phone-based-personal-assistant.md) | Access OpenClaw from any phone via voice call or SMS. Get calendar updates, Jira tickets, and web search results hands-free. |
 | [Family Calendar & Household Assistant](usecases/family-calendar-household-assistant.md) | Aggregate all family calendars into a morning briefing, monitor messages for appointments, and manage household inventory. |
 | [Multi-Agent Specialized Team](usecases/multi-agent-team.md) | Run multiple specialized agents (strategy, dev, marketing, business) as a coordinated team via a single Telegram chat. |
+| [OpenClaw as Desktop Cowork)](usecases/aionui-cowork-desktop.md) | Use OpenClaw as a desktop Cowork app — unified UI, multi-agent, MCP once, WebUI/Telegram/Lark/DingTalk. When OpenClaw is down, fix it remotely via Telegram or WebUI using the built-in OpenClaw deployment expert (install, detect, repair). |
 | [Custom Morning Brief](usecases/custom-morning-brief.md) | Get a fully customized daily briefing — news, tasks, content drafts, and AI-recommended actions — texted to you every morning. |
 | [Automated Meeting Notes & Action Items](usecases/meeting-notes-action-items.md) | Turn meeting transcripts into structured summaries and automatically create tasks in Jira, Linear, or Todoist — assigned to the right person. |
 | [Habit Tracker & Accountability Coach](usecases/habit-tracker-accountability-coach.md) | Proactive daily check-ins via Telegram or SMS that track habits, maintain streaks, and adapt their tone based on your progress. |
