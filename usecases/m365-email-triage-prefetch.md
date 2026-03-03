@@ -35,9 +35,10 @@ Create a Python script that runs as a system cron job (not an OpenClaw cron — 
 #!/usr/bin/env python3
 """Email prefetch — runs via system cron, writes JSON for OpenClaw to read."""
 import subprocess, json, os
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timedelta
+from zoneinfo import ZoneInfo  # Python 3.9+; handles DST automatically
 
-CST = timezone(timedelta(hours=-6))
+CST = ZoneInfo("America/Chicago")
 LOOKBACK = timedelta(minutes=35)  # slightly wider than the 30-min interval
 OUTPUT = "/tmp/openclaw/email-monitor-pending.json"
 
