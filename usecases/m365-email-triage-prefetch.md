@@ -58,7 +58,12 @@ def fetch_tenant(tenant):
         "--output", "text"
     ]
     result = subprocess.run(cmd, capture_output=True, text=True, timeout=30)
-    return json.loads(result.stdout) if result.returncode == 0 else []
+    if result.returncode != 0:
+        return []
+    try:
+        return json.loads(result.stdout)
+    except json.JSONDecodeError:
+        return []
 
 def strip_reply_chains(emails):
     """Remove quoted reply content from bodyPreview to save tokens."""
@@ -78,12 +83,14 @@ for tenant in TENANTS:
     results[tenant["name"]] = strip_reply_chains(emails)
 
 os.makedirs(os.path.dirname(OUTPUT), exist_ok=True)
-with open(OUTPUT, "w") as f:
+tmp_output = f"{OUTPUT}.tmp"
+with open(tmp_output, "w") as f:
     json.dump({"fetched_at": datetime.now(CST).isoformat(), "tenants": results}, f)
+os.replace(tmp_output, OUTPUT)
 ```
 
 **System crontab** (runs every 30 minutes, 8 AM to 11 PM):
-```
+```bash
 CRON_TZ=America/Chicago
 */30 8-23 * * * /usr/bin/python3 /path/to/email-prefetch.py >> /tmp/openclaw/email-monitor.log 2>&1
 ```
