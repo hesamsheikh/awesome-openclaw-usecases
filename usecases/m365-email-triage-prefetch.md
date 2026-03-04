@@ -34,8 +34,8 @@ Create a Python script that runs as a system cron job (not an OpenClaw cron — 
 ```python
 #!/usr/bin/env python3
 """Email prefetch — runs via system cron, writes JSON for OpenClaw to read."""
-import subprocess, json, os
-from datetime import datetime, timedelta
+import subprocess, json, os, tempfile
+from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo  # Python 3.9+; handles DST automatically
 
 CST = ZoneInfo("America/Chicago")
@@ -48,7 +48,7 @@ TENANTS = [
 ]
 
 def fetch_tenant(tenant):
-    since = (datetime.now(CST) - LOOKBACK).strftime("%Y-%m-%dT%H:%M:%S")
+    since = (datetime.now(CST) - LOOKBACK).astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     cmd = [
         "openclaw", "skills", "call", "mcporter",
         "--", "outlook", "mail", "list",
@@ -84,10 +84,15 @@ for tenant in TENANTS:
     results[tenant["name"]] = strip_reply_chains(emails)
 
 os.makedirs(os.path.dirname(OUTPUT), exist_ok=True)
-tmp_output = f"{OUTPUT}.tmp"
-with open(tmp_output, "w") as f:
-    json.dump({"fetched_at": datetime.now(CST).isoformat(), "tenants": results}, f)
-os.replace(tmp_output, OUTPUT)
+try:
+    fd, tmp_output = tempfile.mkstemp(dir=os.path.dirname(OUTPUT), suffix=".json")
+    with os.fdopen(fd, "w") as f:
+        json.dump({"fetched_at": datetime.now(CST).isoformat(), "tenants": results}, f)
+    os.replace(tmp_output, OUTPUT)
+except (OSError, IOError) as e:
+    print(f"ERROR: Failed to write {OUTPUT}: {e}")
+    if os.path.exists(tmp_output):
+        os.remove(tmp_output)
 ```
 
 **System crontab** (runs every 30 minutes, 8 AM to 11 PM):
