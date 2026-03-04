@@ -58,7 +58,10 @@ def fetch_tenant(tenant):
         "--top", "20",
         "--output", "text"
     ]
-    result = subprocess.run(cmd, capture_output=True, text=True, timeout=30)
+    try:
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=30)
+    except subprocess.TimeoutExpired:
+        return []
     if result.returncode != 0:
         return []
     try:
