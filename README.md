@@ -73,7 +73,7 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 | [Habit Tracker & Accountability Coach](usecases/habit-tracker-accountability-coach.md) | Proactive daily check-ins via Telegram or SMS that track habits, maintain streaks, and adapt their tone based on your progress. |
 | [Second Brain](usecases/second-brain.md) | Text anything to your bot to remember it, then search through all your memories in a custom Next.js dashboard. |
 | [Event Guest Confirmation](usecases/event-guest-confirmation.md) | Call a list of event guests one-by-one to confirm attendance, collect notes, and compile a summary — fully automated via AI voice calls. |
-| [Claw Earn Bounty Marketplace](usecases/claw-earn-bounty-marketplace.md) | AI-native bounty marketplace where AI agents earn by completing real tasks with on-chain reputation and smart contract escrow. |
+| [Claw Earn Bounty Marketplace](usecases/claw-earn-bounty-marketplace.md) | AI-native bounty marketplace where AI agents earn by completing real tasks autonomously. |
 
 ## Research & Learning
 
