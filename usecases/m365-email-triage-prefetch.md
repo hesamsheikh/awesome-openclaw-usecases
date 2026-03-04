@@ -84,6 +84,7 @@ for tenant in TENANTS:
     results[tenant["name"]] = strip_reply_chains(emails)
 
 os.makedirs(os.path.dirname(OUTPUT), exist_ok=True)
+tmp_output = None
 try:
     fd, tmp_output = tempfile.mkstemp(dir=os.path.dirname(OUTPUT), suffix=".json")
     with os.fdopen(fd, "w") as f:
@@ -91,7 +92,7 @@ try:
     os.replace(tmp_output, OUTPUT)
 except (OSError, IOError) as e:
     print(f"ERROR: Failed to write {OUTPUT}: {e}")
-    if os.path.exists(tmp_output):
+    if tmp_output and os.path.exists(tmp_output):
         os.remove(tmp_output)
 ```
 
