@@ -102,3 +102,10 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 > Please only submit usecases you have already worked with and verified that works (at least for a day). We value real ideas that make our lives actually better, not worse!
 >
 > **Note:** We do not accept use cases related to crypto.
+
+
+## Memory and Persistence
+
+| Name | Description |
+|------|-------------|
+| [Adam Framework: Persistent Memory](usecases/adam-framework-persistent-memory.md) | Give your OpenClaw agent persistent memory across sessions. Solves AI amnesia. Validated over 353 sessions on a live business. |
