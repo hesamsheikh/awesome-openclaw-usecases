@@ -50,6 +50,7 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 |------|-------------|
 | [n8n Workflow Orchestration](usecases/n8n-workflow-orchestration.md) | Delegate API calls to n8n workflows via webhooks — the agent never touches credentials, and every integration is visual and lockable. |
 | [Self-Healing Home Server](usecases/self-healing-home-server.md) | Run an always-on infrastructure agent with SSH access, automated cron jobs, and self-healing capabilities across your home network. |
+| [Runtime Security Hardening](usecases/runtime-security-hardening.md) | Add runtime defense against prompt injection, exec abuse, credential leakage, and file tampering with PRISM — 10 lifecycle hooks, HMAC audit trail, and a security dashboard. |
 
 ## Productivity
 
