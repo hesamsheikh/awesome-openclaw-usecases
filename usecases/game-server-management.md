@@ -52,6 +52,8 @@ I can manage dedicated game servers via the Supercraft API.
 
 API base: https://claws.supercraft.host
 Auth: Bearer token (JWT) — obtained via login-link or purchase flow
+Security: Never paste tokens into AGENTS.md or commit them to git.
+  Load the token from environment variables or a secret manager at runtime.
 
 Available actions:
 - List my servers: GET /servers
