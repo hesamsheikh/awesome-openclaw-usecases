@@ -62,6 +62,7 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 | [Personal CRM](usecases/personal-crm.md) | Automatically discover and track contacts from your email and calendar, with natural language queries. |
 | [Health & Symptom Tracker](usecases/health-symptom-tracker.md) | Track food intake and symptoms to identify triggers, with scheduled check-in reminders. |
 | [Multi-Channel Personal Assistant](usecases/multi-channel-assistant.md) | Route tasks across Telegram, Slack, email, and calendar from a single AI assistant. |
+| [Slack Standup & Triage Agent](usecases/slack-standup-triage.md) | Replace standup meetings and manual triage with an OpenClaw agent that collects updates, cross-references Linear/GitHub, and posts summaries. Includes incident response coordination. |
 | [Project State Management](usecases/project-state-management.md) | Event-driven project tracking with automatic context capture, replacing static Kanban boards. |
 | [Dynamic Dashboard](usecases/dynamic-dashboard.md) | Real-time dashboard with parallel data fetching from APIs, databases, and social media. |
 | [Todoist Task Manager](usecases/todoist-task-manager.md) | Maximize agent transparency by syncing reasoning and progress logs to Todoist. |
