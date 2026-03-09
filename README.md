@@ -25,6 +25,13 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 
 > **Warning:** OpenClaw skills and third-party dependencies referenced here may have critical security vulnerabilities. Many use cases link to community-built skills, plugins, and external repos that have **not been audited by the maintainer of this list**. Always review skill source code, check requested permissions, and avoid hardcoding API keys or credentials. You are solely responsible for your own security.
 
+
+## 🏥 Recovery Use Cases
+
+| Use Case | Description | Link |
+|----------|-------------|------|
+| **CEO Recovery AI Agent** | Fu Sheng (Cheetah Mobile CEO) trained AI assistant "Sanwan" during 14-day hip surgery recovery. Built 8-agent system, sent 611 personalized New Year messages. 1,157 messages, 220K Chinese chars. | [GitHub](https://github.com/neofusheng/sanwan) • [Diary](https://sanwan.ai) |
+
 ## Social Media
 
 | Name | Description |
