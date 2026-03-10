@@ -33,6 +33,7 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 | [Daily YouTube Digest](usecases/daily-youtube-digest.md) | Get daily summaries of new videos from your favorite channels — never miss content from creators you follow. |
 | [X Account Analysis](usecases/x-account-analysis.md) | Get a qualitative analysis of your X account.|
 | [Multi-Source Tech News Digest](usecases/multi-source-tech-news-digest.md) | Automatically aggregate and deliver quality-scored tech news from 109+ sources (RSS, Twitter/X, GitHub, web search) via natural language. |
+| [X/Twitter Data Extraction & Automation](usecases/x-twitter-scraper.md) | 40+ tools for tweet search, user lookup, follower extraction, engagement metrics, giveaway draws, trending topics, write actions, and Telegram integrations. |
 
 ## Creative & Building
 
