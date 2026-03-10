@@ -65,11 +65,23 @@ Available actions:
 - Send console command: POST /servers/{id}/console
 - View logs: GET /servers/{id}/logs
 - Browse available games: GET /catalog/games
+- Purchase a server (no auth): POST /orders/purchase
+- Claim token after purchase/login: GET /auth/claim?magic=...
 
 When the user asks about their game server:
 1. List servers to find the right one
 2. Check status before taking action
 3. Confirm destructive operations (restart, config changes) before executing
+
+CRITICAL — Purchase & login flow ordering:
+When generating a checkout_url or login_url, you MUST send the link to the
+user as a message BEFORE calling any tools (curl, exec, cron). If you call a
+tool first, the message with the link will be blocked and the user will never
+see it. Correct order:
+1. Reply to user with the checkout_url / login_url
+2. AFTER the reply, set up a cron (every 30s) to poll GET /auth/claim?magic=...
+3. When claim returns status:"ready", save the JWT token securely
+Do NOT use while/sleep loops — use a cron job instead.
 ```
 
 ### 3. Example Conversations
@@ -91,7 +103,7 @@ The agent fetches the current config, updates the `max_players` field, and appli
 **Order a new server:**
 > "I want to host a Factorio server for my friends, something cheap"
 
-The agent checks `GET /catalog/games/fac`, shows available plans with pricing, and after confirmation calls `POST /orders/purchase` with the selected product.
+The agent checks `GET /catalog/games/fac`, shows available plans with pricing, and after confirmation calls `POST /orders/purchase`. It then immediately replies with the `checkout_url` so the user can complete payment. After sending the link, it sets up a cron to poll `/auth/claim` every 30 seconds until the payment is confirmed.
 
 **Debug a crash:**
 > "My Rust server seems down, check what happened"
