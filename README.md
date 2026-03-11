@@ -96,7 +96,7 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 
 We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
-- [PolyClawster](https://github.com/al1enjesus/polyclawster) - AI agent skill for trading on Polymarket prediction markets. Non-custodial, whale signal detection, public leaderboard. Works as OpenClaw skill or Telegram Mini App.
+- [PolyClawster](https://github.com/al1enjesus/polyclawster) - AI agent that autonomously monitors prediction market signals, detects smart-money patterns, and executes decisions — demonstrating event-driven autonomous reasoning with non-custodial local execution.
 - Add a new usecase
 - Improve existing ones
 
