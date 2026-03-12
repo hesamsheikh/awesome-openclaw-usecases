@@ -12,19 +12,19 @@ Sets up automated encrypted cloud backups of your entire OpenClaw workspace. Bac
 
 ### Initial Setup
 
-```
+```text
 Install the keepmyclaw skill and configure daily encrypted backups of my workspace.
 ```
 
 ### Verify First Backup
 
-```
+```text
 Run a backup now and verify the snapshot was uploaded successfully. List my snapshots to confirm.
 ```
 
 ### Safe Restore Drill
 
-```
+```text
 Run a restore drill into /tmp/keepmyclaw-restore-check so I can verify recovery works without touching my live workspace.
 ```
 
@@ -32,7 +32,7 @@ Run a restore drill into /tmp/keepmyclaw-restore-check so I can verify recovery 
 
 On the new machine after installing OpenClaw:
 
-```
+```text
 Install keepmyclaw and restore my latest backup from the cloud.
 ```
 
