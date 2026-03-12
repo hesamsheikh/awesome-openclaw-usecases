@@ -60,11 +60,11 @@ Create ~/research-reports/{run-id}/ and start deep research in each provider one
 3. Open Gemini (gemini.google.com), paste the prompt, start deep research
 
 Then track and poll for completion:
-- Before starting the first provider, write ~/research-reports/{run-id}/status.json with the run_id, started_at_utc, poll_cron_id (null), and empty provider slots (status "pending", targetId null for each).
+- Before starting the first provider, write ~/research-reports/{run-id}/status.json with the run_id, started_at_utc, poll_cron_id (null), the approved prompt text, current phase ("starting"), and empty provider slots (status "pending", targetId null for each).
 - After each provider is started, immediately update status.json with that provider's targetId. This way if the session is interrupted mid-startup, you keep the targetIds already collected.
-- Once all three are started, status.json contains ALL state needed to resume after interruption:
-  {"run_id": "...", "started_at_utc": "...", "poll_cron_id": "...", "providers": {"claude": {"status": "pending", "targetId": "..."}, "chatgpt": {"status": "pending", "targetId": "..."}, "gemini": {"status": "pending", "targetId": "..."}}}
-- This file is the source of truth. If the user sends a message, runs /compact, or context is lost for any reason, ALWAYS read status.json first to recover full state before continuing.
+- Once all three are started, update phase to "polling". status.json now contains ALL state needed to resume after interruption:
+  {"run_id": "...", "started_at_utc": "...", "poll_cron_id": "...", "phase": "polling", "prompt": "...", "providers": {"claude": {"status": "pending", "targetId": "..."}, "chatgpt": {"status": "pending", "targetId": "..."}, "gemini": {"status": "pending", "targetId": "..."}}}
+- This file is the source of truth. If the user sends a message, runs /compact, or context is lost for any reason, ALWAYS read status.json first to recover full state before continuing. If phase is "starting" and some providers have null targetIds, resume launching from where you left off using the saved prompt.
 
 Schedule the polling via cron so it runs automatically in the main session (the user's chat), even if the user is idle or context is compacted:
 - First check: `cron add --session main --at {now + 8 minutes ISO 8601} --system-event "Deep research poll: read ~/research-reports/{run-id}/status.json and check pending providers"`
@@ -81,7 +81,7 @@ On each check cycle (triggered by cron):
   2. For each provider still "pending": focus its tab by targetId, take a snapshot, check if the research response is fully visible with no loading indicator
   3. If done: save output to ~/research-reports/{run-id}/{provider}.md, update status in status.json to "done"
   4. If still running: leave as "pending"
-  5. If "pending" for more than 20 minutes (compare current UTC to started_at_utc): save partial output, mark "partial" in status.json
+  5. If "pending" for more than 30 minutes (compare current UTC to started_at_utc): save partial output, mark "partial" in status.json
 - Once all providers are "done" or "partial", proceed to Phase 4
 
 PHASE 4 — SYNTHESIZE
@@ -128,7 +128,7 @@ See the [flow diagram](#flow-diagram) below for a complete walkthrough.
 
 - **Use a strong model (Opus-tier)** for the entire orchestration. It needs to search well, ask good clarifying questions, generate tight prompts, and synthesize large outputs. This is not a job for a fast/cheap model.
 - **Don't skip the clarifying questions phase.** A scoped prompt gives you three excellent reports. A vague prompt gives you three mediocre ones.
-- **status.json survives interruptions.** The polling phase can take 10-20 minutes. If you send messages, run /compact, or context gets trimmed, the agent recovers by reading status.json — all state (run ID, targetIds, timestamps, completion status) lives on disk, not in context.
+- **status.json survives interruptions.** The polling phase can take 10-30 minutes. If you send messages, run /compact, or context gets trimmed, the agent recovers by reading status.json — all state (run ID, targetIds, timestamps, completion status) lives on disk, not in context.
 - **Don't use sub-agents for polling.** You might consider spawning a sub-agent to handle the polling loop while the main agent stays free. But both would need browser access, and the browser relay controls one tab at a time — two agents fighting over tab focus will collide. Keep everything in the main agent with status.json as the recovery mechanism.
 - **Browser relay conflicts.** If other sessions or agents are using the same Chrome relay profile while your research is running, they may steal tab focus mid-check or navigate away from a provider tab. Use a dedicated Chrome profile that only this workflow touches, and don't run other browser-dependent tasks during the polling phase.
 
@@ -289,7 +289,7 @@ Browser automation that controls logged-in sessions may conflict with the Terms 
 │  │     │         save {provider}.md       │       │     │
 │  │     │         update status → "done"   │       │     │
 │  │     │                                  │       │     │
-│  │     │ >20 min since started_at_utc?    │       │     │
+│  │     │ >30 min since started_at_utc?    │       │     │
 │  │     │   YES → save partial output      │       │     │
 │  │     │         update status → "partial"│       │     │
 │  │     └──────────────────────────────────┘       │     │
