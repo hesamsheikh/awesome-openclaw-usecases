@@ -25,7 +25,7 @@ Run a backup now and verify the snapshot was uploaded successfully. List my snap
 ### Safe Restore Drill
 
 ```text
-Run a restore drill into /tmp/keepmyclaw-restore-check so I can verify recovery works without touching my live workspace.
+Run a restore drill into a temporary directory such as /tmp/keepmyclaw-restore-check so I can verify recovery works without touching my live workspace.
 ```
 
 ### Migrate to New Machine
@@ -60,6 +60,8 @@ clawhub install keepmyclaw
 3. The server never sees plaintext — only you can decrypt with your passphrase
 4. Cron job runs backups automatically on your chosen schedule (daily recommended)
 5. Restore pulls the encrypted snapshot and decrypts locally
+
+> **⚠️ Passphrase Recovery:** Your encryption passphrase is the only way to decrypt backups. Store it outside your OpenClaw workspace (e.g., in a password manager or printed offline backup). If you lose the passphrase, cloud snapshots cannot be restored.
 
 ## Related Links
 
