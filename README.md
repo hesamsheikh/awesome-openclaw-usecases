@@ -30,7 +30,7 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 
 | Use Case | Description | Link |
 |----------|-------------|------|
-| [**CEO Recovery AI Agent**](usecases/ceo-recovery-ai-agent.md) | Fu Sheng (Cheetah Mobile CEO) trained AI assistant "Sanwan" during 14-day hip surgery recovery. Built 8-agent system, sent 611 personalized New Year messages. 1,157 messages, 220K Chinese chars. | [GitHub](https://github.com/neofusheng/sanwan) • [Diary](https://sanwan.ai) |
+| [**CEO Recovery AI Agent**](usecases/ceo-recovery-ai-agent.md) | Fu Sheng, CEO of Cheetah Mobile (NYSE: CMCM), trained AI assistant "Sanwan" by voice alone during 14-day hip surgery recovery. Built 8-agent system, 1M+ views on X, built sanwan.ai in 24hrs for $115. | [GitHub](https://github.com/neofusheng/sanwan) • [Diary](https://sanwan.ai) |
 
 ## Social Media
 

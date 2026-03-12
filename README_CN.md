@@ -31,7 +31,7 @@
 
 | 用例 | 描述 | 链接 |
 |------|------|------|
-| [**CEO 康复 AI 智能体**](usecases/ceo-recovery-ai-agent.md) | 傅盛（猎豹移动 CEO）在髋关节手术恢复的 14 天里训练了 AI 助理"三万"。构建了 8 智能体系统，发送了 611 条个性化新年祝福。1,157 条消息，22 万字。 | [GitHub](https://github.com/neofusheng/sanwan) • [日记](https://sanwan.ai) |
+| [**CEO 康复 AI 智能体**](usecases/ceo-recovery-ai-agent.md) | 傅盛，猎豹移动 CEO（NYSE: CMCM），髋关节手术恢复期间纯语音训练 AI 助理"三万"。14 天构建 8 智能体系统，X 上百万浏览，24 小时内用 $115 建成 sanwan.ai。 | [GitHub](https://github.com/neofusheng/sanwan) • [日记](https://sanwan.ai) |
 
 ## 社交媒体
 
