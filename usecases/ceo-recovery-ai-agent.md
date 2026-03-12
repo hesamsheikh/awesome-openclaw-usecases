@@ -10,8 +10,8 @@ By the end, Sanwan had grown from a bot that couldn't even look up a contact int
 
 ## What Sanwan Actually Did
 
-- **611 personalized New Year messages** sent on Chinese New Year's Eve in 4 minutes, zero failures, every message unique to the recipient
-- **1M+ views on X (Twitter)** — Sanwan wrote a 15-tweet thread about its own story, scheduled it for late night, and posted autonomously. It became one of only 3 posts on Fu Sheng's account to ever break 1M views — and the only one not planned by a human team
+- **611 personalized New Year messages** — on Day 2–3, during Chinese New Year, Sanwan wrote a script and sent individualized greetings to 600+ employees in 4 minutes. Zero failures, every message unique to the recipient. This was one of its first real tasks.
+- **1M+ views and 5,000+ new followers on X** — Sanwan then turned this experience into a story. It wrote a 15-tweet thread about its own creation, scheduled it for late night, and posted autonomously. It became one of only 3 posts on Fu Sheng's account to ever break 1M views — and the only one not planned by a human team.
 - **100K+ reads on WeChat** — produced a viral long-form article for the official account
 - **Live-streamed self-healing** — during a broadcast watched by 100,000 people, sanwan.ai crashed because the agent itself broke it. Fu Sheng let Sanwan diagnose and fix the bug on camera. It was back online in 3 minutes
 - **Built sanwan.ai in 24 hours** — 59 HTML pages, 7,070 lines of code, 76 image assets, 38 hand-drawn PPT pages, 41 skill detail pages, 14 git commits, plus a full English version
