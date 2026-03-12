@@ -49,7 +49,7 @@ uv run --python 3.13 --frozen -- python -m openclaw_mem --json status
 3. Ingest notes, decisions, or sample memory into the database:
 
 ```bash
-python3 ./scripts/make_sample_jsonl.py --out ./sample.jsonl
+uv run --python 3.13 --frozen -- python ./scripts/make_sample_jsonl.py --out ./sample.jsonl
 uv run --python 3.13 --frozen -- python -m openclaw_mem ingest --file ./sample.jsonl --json
 ```
 
@@ -70,6 +70,7 @@ uv run --python 3.13 --frozen -- python -m openclaw_mem optimize review --json -
 6. If you already run OpenClaw, add the sidecar plugin so observations are captured automatically:
 
 ```bash
+# From the openclaw-mem directory:
 ln -s ./extensions/openclaw-mem ~/.openclaw/plugins/openclaw-mem
 openclaw gateway restart
 ```
