@@ -60,7 +60,9 @@ Create ~/research-reports/{run-id}/ and start deep research in each provider one
 3. Open Gemini (gemini.google.com), paste the prompt, start deep research
 
 Then track and poll for completion:
-- After starting all three, write ~/research-reports/{run-id}/status.json with ALL state needed to resume after interruption:
+- Before starting the first provider, write ~/research-reports/{run-id}/status.json with the run_id, started_at_utc, poll_cron_id (null), and empty provider slots (status "pending", targetId null for each).
+- After each provider is started, immediately update status.json with that provider's targetId. This way if the session is interrupted mid-startup, you keep the targetIds already collected.
+- Once all three are started, status.json contains ALL state needed to resume after interruption:
   {"run_id": "...", "started_at_utc": "...", "poll_cron_id": "...", "providers": {"claude": {"status": "pending", "targetId": "..."}, "chatgpt": {"status": "pending", "targetId": "..."}, "gemini": {"status": "pending", "targetId": "..."}}}
 - This file is the source of truth. If the user sends a message, runs /compact, or context is lost for any reason, ALWAYS read status.json first to recover full state before continuing.
 
@@ -142,7 +144,7 @@ Browser automation that controls logged-in sessions may conflict with the Terms 
 
 ## Flow Diagram
 
-```
+```text
 ┌─────────────────────────────────────────────────────────┐
 │                    USER MESSAGE                         │
 │  "Deep research the current state of AI agent           │
@@ -194,23 +196,27 @@ Browser automation that controls logged-in sessions may conflict with the Terms 
 │  Create ~/research-reports/20260312-1430-ai-agent-      │
 │         frameworks/                                     │
 │                                                         │
+│  Write status.json (empty provider slots):              │
+│  {"run_id":"...","providers":{"claude":                 │
+│   {"status":"pending","targetId":null},...}}            │
+│                                                         │
 │  ┌───────────────────────────────────────────┐          │
 │  │ Browser relay (one tab at a time)         │          │
 │  │                                           │          │
 │  │  1. Focus Claude tab → paste prompt       │          │
 │  │     → click deep research → start         │          │
-│  │     Save targetId: "target-abc-123"       │          │
+│  │     → update status.json w/ targetId      │          │
 │  │                                           │          │
 │  │  2. Focus ChatGPT tab → paste prompt      │          │
 │  │     → click deep research → start         │          │
-│  │     Save targetId: "target-def-456"       │          │
+│  │     → update status.json w/ targetId      │          │
 │  │                                           │          │
 │  │  3. Focus Gemini tab → paste prompt       │          │
 │  │     → click deep research → start         │          │
-│  │     Save targetId: "target-ghi-789"       │          │
+│  │     → update status.json w/ targetId      │          │
 │  └───────────────────────────────────────────┘          │
 │                                                         │
-│  Write status.json:                                     │
+│  Final status.json:                                     │
 │  {                                                      │
 │    "run_id": "20260312-1430-ai-agent-frameworks",       │
 │    "started_at_utc": "2026-03-12T14:30:00Z",            │
