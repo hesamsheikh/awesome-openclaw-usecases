@@ -2,6 +2,8 @@
 
 Fu Sheng — founder and CEO of [Cheetah Mobile](https://www.cmcm.com) (NYSE: CMCM), a company he took public on the New York Stock Exchange in 2014 — fractured his hip in a skiing accident during Chinese New Year 2026. He is also the founder of OrionStar, an AI robotics company, and was previously General Manager at Qihoo 360 where he led the development of 360 Safe Guard, one of China's most widely used security products.
 
+**Important context: Fu Sheng is not a programmer.** He has never been a software engineer, doesn't write code, and didn't even have a GitHub account before this project. Everything described below was accomplished by a non-technical person talking to an AI through voice messages.
+
 Stuck in bed for 14 days, he did something unexpected: he trained an OpenClaw-based AI assistant named **"Sanwan" (三万)** entirely by voice — no code, no keyboard, no local files. Just talking to his phone via Feishu (Lark).
 
 By the end, Sanwan had grown from a bot that couldn't even look up a contact into an 8-agent team running 24/7 — writing viral content, building websites, and managing operations autonomously.
