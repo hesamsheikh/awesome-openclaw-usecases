@@ -11,7 +11,7 @@
 <br />
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Use Cases](https://img.shields.io/badge/usecases-36-blue?style=flat-square)
+![Use Cases](https://img.shields.io/badge/usecases-37-blue?style=flat-square)
 ![Last Update](https://img.shields.io/github/last-commit/hesamsheikh/awesome-openclaw-usecases?label=Last%20Update&style=flat-square)
 [![Follow on X](https://img.shields.io/badge/Follow%20on-X-000000?style=flat-square&logo=x)](https://x.com/Hesamation)
 [![Discord](https://img.shields.io/badge/Discord-Open%20Source%20AI%20Builders-5865F2?style=flat-square&logo=discord&logoColor=white)](https://discord.gg/vtJykN3t)
@@ -24,6 +24,13 @@
 Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **ways it can improve your life**. This is a community collection of real-life use cases for [OpenClaw](https://github.com/openclaw/openclaw).
 
 > **Warning:** OpenClaw skills and third-party dependencies referenced here may have critical security vulnerabilities. Many use cases link to community-built skills, plugins, and external repos that have **not been audited by the maintainer of this list**. Always review skill source code, check requested permissions, and avoid hardcoding API keys or credentials. You are solely responsible for your own security.
+
+
+## 🏥 Recovery Use Cases
+
+| Use Case | Description | Link |
+|----------|-------------|------|
+| [**CEO Recovery AI Agent**](usecases/ceo-recovery-ai-agent.md) | Fu Sheng, CEO of Cheetah Mobile (NYSE: CMCM), trained AI assistant "Sanwan" by voice alone during 14-day hip surgery recovery. Built 8-agent system, 1M+ views on X, built sanwan.ai in 24hrs for $115. | [GitHub](https://github.com/neofusheng/sanwan) • [Diary](https://sanwan.ai) |
 
 ## Social Media
 

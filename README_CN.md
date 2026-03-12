@@ -11,7 +11,7 @@
 <br />
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Use Cases](https://img.shields.io/badge/usecases-36-blue?style=flat-square)
+![Use Cases](https://img.shields.io/badge/usecases-37-blue?style=flat-square)
 ![Last Update](https://img.shields.io/github/last-commit/hesamsheikh/awesome-openclaw-usecases?label=Last%20Update&style=flat-square)
 [![Discord](https://img.shields.io/badge/Discord-Open%20Source%20AI%20Builders-5865F2?style=flat-square&logo=discord&logoColor=white)](https://discord.gg/vtJykN3t)
 </div>
@@ -26,6 +26,12 @@
 解决 OpenClaw 普及的瓶颈：不是 ~~技能~~，而是找到 **它能改善你生活的方式**。这是 [OpenClaw](https://github.com/openclaw/openclaw) 的社区真实使用案例合集。
 
 > **警告：** 此处引用的 OpenClaw 技能和第三方依赖可能存在严重的安全漏洞。许多用例链接到社区构建的技能、插件和外部仓库，这些**未经本列表维护者审核**。请始终审查技能源代码，检查请求的权限，并避免硬编码 API 密钥或凭证。您对自己的安全负全部责任。
+
+## 🏥 康复用例
+
+| 用例 | 描述 | 链接 |
+|------|------|------|
+| [**CEO 康复 AI 智能体**](usecases/ceo-recovery-ai-agent.md) | 傅盛，猎豹移动 CEO（NYSE: CMCM），髋关节手术恢复期间纯语音训练 AI 助理"三万"。14 天构建 8 智能体系统，X 上百万浏览，24 小时内用 $115 建成 sanwan.ai。 | [GitHub](https://github.com/neofusheng/sanwan) • [日记](https://sanwan.ai) |
 
 ## 社交媒体
 
