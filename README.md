@@ -11,7 +11,7 @@
 <br />
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Use Cases](https://img.shields.io/badge/usecases-36-blue?style=flat-square)
+![Use Cases](https://img.shields.io/badge/usecases-37-blue?style=flat-square)
 ![Last Update](https://img.shields.io/github/last-commit/hesamsheikh/awesome-openclaw-usecases?label=Last%20Update&style=flat-square)
 [![Follow on X](https://img.shields.io/badge/Follow%20on-X-000000?style=flat-square&logo=x)](https://x.com/Hesamation)
 [![Discord](https://img.shields.io/badge/Discord-Open%20Source%20AI%20Builders-5865F2?style=flat-square&logo=discord&logoColor=white)](https://discord.gg/vtJykN3t)
@@ -30,7 +30,7 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 
 | Use Case | Description | Link |
 |----------|-------------|------|
-| **CEO Recovery AI Agent** | Fu Sheng (Cheetah Mobile CEO) trained AI assistant "Sanwan" during 14-day hip surgery recovery. Built 8-agent system, sent 611 personalized New Year messages. 1,157 messages, 220K Chinese chars. | [GitHub](https://github.com/neofusheng/sanwan) • [Diary](https://sanwan.ai) |
+| [**CEO Recovery AI Agent**](usecases/ceo-recovery-ai-agent.md) | Fu Sheng, CEO of Cheetah Mobile (NYSE: CMCM), trained AI assistant "Sanwan" by voice alone during 14-day hip surgery recovery. Built 8-agent system, 1M+ views on X, built sanwan.ai in 24hrs for $115. | [GitHub](https://github.com/neofusheng/sanwan) • [Diary](https://sanwan.ai) |
 
 ## Social Media
 
