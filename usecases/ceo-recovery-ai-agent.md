@@ -89,5 +89,5 @@ Sanwan is not a one-time experiment. It continues to operate and is currently wo
 
 - [GitHub Repository](https://github.com/neofusheng/sanwan)
 - [14-Day Recovery Diary (sanwan.ai)](https://sanwan.ai)
-- [Fu Sheng on X](https://x.com/FuSheng_0306)
+- [Fu Sheng on X](https://x.com/fusheng_0306)
 - [OpenClaw](https://github.com/openclaw/openclaw)
