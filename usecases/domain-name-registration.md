@@ -1,4 +1,4 @@
-# Lobster Domains
+# Domain Name Registration
 
 Register domain names across 1000+ TLDs using your OpenClaw agent. Check availability, compare prices, and complete registration — all through natural conversation.
 
@@ -8,7 +8,7 @@ Registering a domain usually means navigating clunky registrar websites, compari
 
 ## What It Does
 
-LobsterDomains lets your OpenClaw agent handle the entire domain registration workflow:
+Lets your OpenClaw agent handle the entire domain registration workflow:
 
 - **Check availability** of any domain across 1000+ TLDs
 - **Compare pricing** across different TLDs to find the best deal
