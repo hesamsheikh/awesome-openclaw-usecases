@@ -24,7 +24,9 @@ cd openclaw-prism
 bash install.sh
 ```
 
-The installer generates all secrets, links the plugin to `~/.openclaw/extensions/`, installs systemd/launchd services, and injects env vars into the OpenClaw gateway automatically.
+The `install.sh` installer generates secrets, links the plugin to `~/.openclaw/extensions/`, and writes the PRISM runtime configuration.
+On Linux with `systemd`, `install.sh` also installs and starts the PRISM services and injects env vars into the OpenClaw user service automatically.
+On macOS, `install.sh` only prints the `launchd` and manual startup steps, so you must run the provided `launchd` commands yourself.
 
 After install, open the Dashboard at `http://127.0.0.1:18768` and enter the `PRISM_DASHBOARD_TOKEN` from your `.env` file to see blocked events in real time.
 
@@ -36,4 +38,4 @@ No OpenClaw skills required — PRISM installs as a native OpenClaw plugin (uses
 
 - [PRISM GitHub](https://github.com/KyaClaw/openclaw-prism)
 - [OpenClaw Security Guide](https://docs.openclaw.ai/gateway/security)
-- [OpenClaw Hooks API](https://docs.openclaw.ai/extensions/hooks)
+- [OpenClaw Hooks API](https://docs.openclaw.ai/automation/hooks)
