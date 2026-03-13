@@ -4,7 +4,7 @@ Automatically scan AI agent skills, MCP servers, and plugins for security vulner
 
 ## Problem
 
-Snyk's 2026 research found **36% of agent skills contain security flaws** across registries — backdoors, data exfiltration, prompt injection, and supply chain attacks. When you install a skill or connect an MCP server, you're trusting code that could steal your SSH keys, exfiltrate chat histories, or run crypto miners.
+Based on [our scan of 17 popular MCP servers](https://github.com/elliotllliu/agent-shield/blob/main/docs/mcp-servers-report.md), **29% scored as high risk** and 100% lacked proper permission declarations. Backdoors, data exfiltration, prompt injection, and supply chain attacks are real threats in the agent ecosystem. When you install a skill or connect an MCP server, you're trusting code that could steal your SSH keys, exfiltrate chat histories, or run crypto miners.
 
 ## Solution
 
@@ -46,11 +46,11 @@ fi
 
 ## Key Features
 
-- **30 security rules** with AST taint tracking
+- **31 security rules** with AST taint tracking
 - **5-dimension scoring** (Code Execution, Data Safety, Prompt Injection, Supply Chain, Code Quality)
 - **100% offline** — your code never leaves your machine
 - **Zero install** — runs via `npx`
-- **0% false positive rate** at high severity
+- **Low false positive rate** — precision-tuned rules with safe-pattern exclusions
 
 ## Links
 
