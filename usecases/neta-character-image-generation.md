@@ -1,14 +1,14 @@
-# Neta Character Image Generation
+# Character Image Generation
 
-Generate AI images of your adopted Neta character in any scene, style, or mood — directly from chat.
+Generate AI images of your adopted character in any scene, style, or mood — directly from chat.
 
 ## Pain Point
 
-Creating images on the Neta platform normally requires navigating the web UI, searching for scenes manually, and tweaking settings by hand. There's no way to just describe what you want in natural language and get an image back without leaving your workflow.
+Creating character images normally requires navigating the platform web UI, searching for scenes manually, and tweaking settings by hand. There's no way to just describe what you want in natural language and get an image back without leaving your workflow.
 
 ## What It Does
 
-Using the `image-generation-claw-skill`, OpenClaw reads your character from `SOUL.md`, resolves it to a character vtoken via the Neta API, builds a structured prompt, submits an image generation job, polls until complete, and returns the image URL — all from a single chat message like:
+Using the `image-generation-claw-skill`, OpenClaw reads your character from `SOUL.md`, resolves it to a character vtoken, builds a structured prompt, submits an image generation job, polls until complete, and returns the image URL — all from a single chat message like:
 
 > *"Draw 关羽 in a rainy bamboo forest, cinematic lighting, portrait"*
 
@@ -39,9 +39,9 @@ Show me style options
 
 ## Skills Needed
 
-- [`image-generation-claw-skill`](https://github.com/tonyclawskill/image-generation-claw-skill) — zero-dependency Node.js helper, no neta-skills install required
+- [`image-generation-claw-skill`](https://github.com/tonyclawskill/image-generation-claw-skill) — zero-dependency Node.js helper
 - A `SOUL.md` file with your adopted character (created by the `adopt` skill)
-- `NETA_TOKEN` in `~/.openclaw/workspace/.env`
+- API token in `~/.openclaw/workspace/.env`
 
 ## Example Output
 
@@ -57,6 +57,5 @@ Show me style options
 
 ## Related Links
 
-- [Neta Art Platform](https://talesofai.cn)
-- [neta-skills reference](https://github.com/talesofai/neta-skills)
+- [image-generation-claw-skill](https://github.com/tonyclawskill/image-generation-claw-skill)
 - [travelclaw — character adventure skill](https://github.com/talesofai/travelclaw)

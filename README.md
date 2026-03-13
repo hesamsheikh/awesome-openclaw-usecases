@@ -43,7 +43,7 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 | [Multi-Agent Content Factory](usecases/content-factory.md) | Run a multi-agent content pipeline in Discord — research, writing, and thumbnail agents working in dedicated channels. |
 | [Autonomous Game Dev Pipeline](usecases/autonomous-game-dev-pipeline.md) | Full lifecycle management of educational game development: from backlog selection to implementation, registration, documentation, and git commit. Enforces "Bugs First" policy. |
 | [Podcast Production Pipeline](usecases/podcast-production-pipeline.md) | Automate the full podcast workflow — guest research, episode outlines, show notes, and social media promo — from topic to publish-ready assets. |
-| [Neta Character Image Generation](usecases/neta-character-image-generation.md) | Generate AI images of your adopted Neta character in any scene, style, or aspect ratio — directly from chat, no web UI needed. |
+| [Character Image Generation](usecases/neta-character-image-generation.md) | Generate AI images of your adopted character in any scene, style, or aspect ratio — directly from chat, no web UI needed. |
 
 ## Infrastructure & DevOps
 
