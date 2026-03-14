@@ -51,6 +51,7 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 |------|-------------|
 | [n8n Workflow Orchestration](usecases/n8n-workflow-orchestration.md) | Delegate API calls to n8n workflows via webhooks — the agent never touches credentials, and every integration is visual and lockable. |
 | [Self-Healing Home Server](usecases/self-healing-home-server.md) | Run an always-on infrastructure agent with SSH access, automated cron jobs, and self-healing capabilities across your home network. |
+| [Agent Skill Security Scanner](usecases/agent-skill-security-scanner.md) | Scan AI agent skills, MCP servers, and plugins for backdoors, data exfiltration, and prompt injection before installing — zero install, 100% offline. |
 
 ## Productivity
 
