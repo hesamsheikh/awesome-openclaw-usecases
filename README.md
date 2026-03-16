@@ -89,6 +89,7 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 | [Semantic Memory Search](usecases/semantic-memory-search.md) | Add vector-powered semantic search to your OpenClaw markdown memory files with hybrid retrieval and auto-sync. |
 | [arXiv Paper Reader](usecases/arxiv-paper-reader.md) | Read and analyze arXiv papers conversationally — fetch by ID, browse sections, compare abstracts, and get AI summaries. |
 | [LaTeX Paper Writing](usecases/latex-paper-writing.md) | Write and compile LaTeX papers conversationally with instant PDF preview — no local TeX installation needed. |
+| [HF Papers Research Discovery](usecases/hf-papers-research-discovery.md) | Discover trending ML papers on Hugging Face, triage by upvotes, and deep-read via arXiv — all conversationally. |
 
 ## Finance & Trading
 
