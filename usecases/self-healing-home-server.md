@@ -174,6 +174,7 @@ Also referenced on the [OpenClaw Showcase](https://openclaw.ai/showcase), where 
 
 ## Related Links
 
+- [WatchClaw](https://github.com/kashifeqbal/watchclaw) — autonomous security/ops hardening layer for OpenClaw deployments (self-healing checks, Cowrie honeypot automation, canary checks, alerting)
 - [Nathan's Full Writeup](https://madebynathan.com/2026/02/03/everything-ive-done-with-openclaw-so-far/)
 - [OpenClaw Documentation](https://github.com/openclaw/openclaw)
 - [TruffleHog (Secret Scanning)](https://github.com/trufflesecurity/trufflehog)
