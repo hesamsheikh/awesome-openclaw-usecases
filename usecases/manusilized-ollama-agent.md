@@ -7,11 +7,11 @@
 
 Run a fully autonomous AI agent on your own hardware using only open-source models from Ollama — no API keys, no cloud costs, no data leaving your machine.
 
-> **What "Manus-Level" means:** The target capability is an agent that can autonomously complete multi-step, real-world tasks (research, coding, data analysis) with real-time streaming output, reliable tool use across 10+ consecutive turns, and context-aware long-horizon planning — matching the experience of commercial agents like Manus or Claude Sonnet in day-to-day productivity tasks.
+> **What "Manus-Level" means:** The target capability is an agent that can autonomously complete multi-step, real-world tasks (research, coding, data analysis) with real-time streaming output, reliable tool use across 10+ consecutive turns, and context-aware long-horizon planning — matching the experience of commercial agents like [Manus](https://manus.im) (an autonomous AI agent by Manus AI) or Claude Sonnet in day-to-day productivity tasks.
 
 `manusilized` patches OpenClaw's Ollama core integration layer to unlock three capabilities that were previously only available with closed-source models like GPT-4 or Claude:
 
-1. **Real-time streaming** — See the agent's thoughts and actions appear token-by-token, just like Manus
+1. **Real-time streaming** — See the agent's thoughts and actions appear token-by-token, just like [Manus](https://manus.im)
 2. **Reliable tool use** — Open-source models (GLM-5, Qwen3, DeepSeek V3.2, Kimi-K2.5) can now call tools reliably, even when they output Markdown instead of structured JSON
 3. **Long-horizon tasks** — Context compression lets the agent work on complex, multi-step tasks without hitting token limits
 
