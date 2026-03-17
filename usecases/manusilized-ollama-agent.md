@@ -77,7 +77,7 @@ ollama pull deepseek-v3.2 # Good overall balance
 
 | Task | Model | Notes |
 |------|-------|-------|
-| General reasoning & planning | `glm-5` | Among popular open-source models (as of March 2026), strong MoE reasoning |
+| General reasoning & planning | `glm-5` | Among popular open-source models (as of March 2026), strong MoE (Mixture of Experts) reasoning |
 | Code generation | `qwen3-coder` | Noted for strong code generation quality (as of March 2026) |
 | Long-context tasks | `kimi-k2.5` | 256K context window (as of March 2026) |
 | Fast responses | `deepseek-v3.2` | Good speed/quality balance (as of March 2026) |
