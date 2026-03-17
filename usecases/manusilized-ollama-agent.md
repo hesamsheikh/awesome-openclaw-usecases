@@ -23,7 +23,7 @@ Run a fully autonomous AI agent on your own hardware using only open-source mode
 
 Ask the agent to research a topic, browse the web, summarize findings, and write a report — all while watching it work in real-time via streaming output.
 
-```text
+```prompt
 Research the latest developments in quantum computing, visit 5 relevant papers,
 and write a 2-page executive summary with citations.
 ```
@@ -32,7 +32,7 @@ and write a 2-page executive summary with citations.
 
 Have the agent scaffold a complete project, write tests, fix bugs, and commit to GitHub — using only a local Qwen3-Coder model.
 
-```text
+```prompt
 Create a FastAPI backend with JWT auth, SQLite database, and Docker support.
 Write tests and push to my GitHub repo.
 ```
@@ -41,7 +41,7 @@ Write tests and push to my GitHub repo.
 
 Feed the agent a CSV file and have it clean the data, run analysis, generate charts, and produce a PDF report — all locally.
 
-```text
+```prompt
 Analyze this sales data, identify trends, create visualizations,
 and generate a board-ready PDF report.
 ```
@@ -50,7 +50,7 @@ and generate a board-ready PDF report.
 
 ### Prerequisites
 - [OpenClaw](https://github.com/openclaw/openclaw) installed
-- [Ollama](https://ollama.ai) running locally or on a cloud VPS
+- [Ollama](https://ollama.com) running locally or on a cloud VPS
 
 ### Installation
 
@@ -77,11 +77,11 @@ ollama pull deepseek-v3.2 # Good overall balance
 
 | Task | Model | Notes |
 |------|-------|-------|
-| General reasoning & planning | `glm-5` | Among popular open-source models (Mar 2026), strong MoE reasoning |
-| Code generation | `qwen3-coder` | Noted for strong code generation quality (Mar 2026) |
-| Long-context tasks | `kimi-k2.5` | 256K context window |
-| Fast responses | `deepseek-v3.2` | Good speed/quality balance |
-| Vision tasks | `qwen3-vl` | Strong vision capabilities (Mar 2026) |
+| General reasoning & planning | `glm-5` | Among popular open-source models (as of March 2026), strong MoE reasoning |
+| Code generation | `qwen3-coder` | Noted for strong code generation quality (as of March 2026) |
+| Long-context tasks | `kimi-k2.5` | 256K context window (as of March 2026) |
+| Fast responses | `deepseek-v3.2` | Good speed/quality balance (as of March 2026) |
+| Vision tasks | `qwen3-vl` | Strong vision capabilities (as of March 2026) |
 
 ## Why This Matters
 
