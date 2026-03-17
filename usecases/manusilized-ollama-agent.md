@@ -23,7 +23,7 @@ Run a fully autonomous AI agent on your own hardware using only open-source mode
 
 Ask the agent to research a topic, browse the web, summarize findings, and write a report — all while watching it work in real-time via streaming output.
 
-```prompt
+```text
 Research the latest developments in quantum computing, visit 5 relevant papers,
 and write a 2-page executive summary with citations.
 ```
@@ -32,7 +32,7 @@ and write a 2-page executive summary with citations.
 
 Have the agent scaffold a complete project, write tests, fix bugs, and commit to GitHub — using only a local Qwen3-Coder model.
 
-```prompt
+```text
 Create a FastAPI backend with JWT auth, SQLite database, and Docker support.
 Write tests and push to my GitHub repo.
 ```
@@ -41,7 +41,7 @@ Write tests and push to my GitHub repo.
 
 Feed the agent a CSV file and have it clean the data, run analysis, generate charts, and produce a PDF report — all locally.
 
-```prompt
+```text
 Analyze this sales data, identify trends, create visualizations,
 and generate a board-ready PDF report.
 ```
