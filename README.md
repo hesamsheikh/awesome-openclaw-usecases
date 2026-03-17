@@ -50,6 +50,7 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 | Name | Description |
 |------|-------------|
 | [n8n Workflow Orchestration](usecases/n8n-workflow-orchestration.md) | Delegate API calls to n8n workflows via webhooks — the agent never touches credentials, and every integration is visual and lockable. |
+| [Opik Tracing & Cost Observability](usecases/opik-openclaw-observability.md) | Add trace-level observability to OpenClaw with Opik: LLM/tool/sub-agent spans, error triage, and cost/usage tracking. |
 | [Self-Healing Home Server](usecases/self-healing-home-server.md) | Run an always-on infrastructure agent with SSH access, automated cron jobs, and self-healing capabilities across your home network. |
 
 ## Productivity
