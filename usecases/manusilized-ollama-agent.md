@@ -93,7 +93,7 @@ Before `manusilized`, using Ollama with OpenClaw meant:
 After `manusilized`:
 - ✅ Real-time token streaming — watch the agent think
 - ✅ In our testing, we observed a 95%+ tool call success rate with open-source models (tested on Qwen3-32B, GLM-5, and DeepSeek V3.2 across 200 tool-call scenarios, March 2026)
-- ✅ Unlimited task length via intelligent context compression
+- ✅ Significantly extended task length via intelligent context compression
 - ✅ Smart error recovery — the agent learns from failures
 
 ## Contributing
