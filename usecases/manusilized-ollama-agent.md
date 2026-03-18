@@ -5,9 +5,9 @@
 
 ## What It Does
 
-Run a fully autonomous AI agent using open-source models from Ollama — no API keys required. When deployed fully local (on your own hardware), you also avoid cloud costs and keep all data on your own machine. Cloud/VPS deployments are supported but data privacy depends on your hosting environment.
+Run a fully autonomous AI agent using open-source Ollama models — no API keys required. When deployed locally on your own hardware, you also avoid cloud costs and keep all data on your own machine. Cloud/VPS deployments are supported, but data privacy depends on your hosting environment.
 
-> **What "Manus-Level" means:** The target capability is an agent that can autonomously complete multi-step, real-world tasks (research, coding, data analysis) with real-time streaming output, reliable tool use across 10+ consecutive turns, and context-aware long-horizon planning — matching the experience of commercial agents like [Manus](https://manus.im) (an autonomous AI agent by Manus AI) or Claude Sonnet in day-to-day productivity tasks.
+> **What "Manus-Level" means:** The target capability is an agent that can autonomously complete multi-step, real-world tasks (research, coding, data analysis) with real-time streaming output, reliable tool use across 10+ consecutive turns, and context-aware long-horizon planning — matching the experience of commercial agents like [Manus](https://manus.im) (an autonomous AI agent platform by Manus AI) or Claude Sonnet in day-to-day productivity tasks.
 
 `manusilized` patches OpenClaw's Ollama core integration layer to unlock three capabilities that were previously only available with closed-source models like GPT-4 or Claude:
 
@@ -77,7 +77,7 @@ ollama pull deepseek-v3.2 # Good overall balance
 
 | Task | Model | Notes |
 |------|-------|-------|
-| General reasoning & planning | `glm-5` | Among popular open-source models (as of March 2026), strong MoE (Mixture of Experts) reasoning |
+| General reasoning & planning | `glm-5` | Among popular open-source models (as of March 2026), strong Mixture of Experts (MoE) reasoning |
 | Code generation | `qwen3-coder` | Noted for strong code generation quality (as of March 2026) |
 | Long-context tasks | `kimi-k2.5` | 256K context window (as of March 2026) |
 | Fast responses | `deepseek-v3.2` | Good speed/quality balance (as of March 2026) |
