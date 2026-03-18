@@ -45,6 +45,12 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 | [Autonomous Game Dev Pipeline](usecases/autonomous-game-dev-pipeline.md) | Full lifecycle management of educational game development: from backlog selection to implementation, registration, documentation, and git commit. Enforces "Bugs First" policy. |
 | [Podcast Production Pipeline](usecases/podcast-production-pipeline.md) | Automate the full podcast workflow — guest research, episode outlines, show notes, and social media promo — from topic to publish-ready assets. |
 
+## AI & Open-Source Models
+
+| Name | Description |
+|------|-------------|
+| [Manus-Level Agent with Ollama](usecases/manusilized-ollama-agent.md) | Run a fully autonomous, Manus-quality AI agent using only open-source models (GLM-5, Qwen3, DeepSeek V3.2) via Ollama — real-time streaming, reliable tool use, and unlimited task length. No API keys required. |
+
 ## Infrastructure & DevOps
 
 | Name | Description |
