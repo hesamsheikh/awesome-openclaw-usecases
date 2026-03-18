@@ -5,7 +5,7 @@
 
 ## What It Does
 
-Run a fully autonomous AI agent on your own hardware using only open-source models from Ollama — no API keys, no cloud costs, no data leaving your machine.
+Run a fully autonomous AI agent using open-source models from Ollama — no API keys required. When deployed fully local (on your own hardware), you also avoid cloud costs and keep all data on your own machine. Cloud/VPS deployments are supported but data privacy depends on your hosting environment.
 
 > **What "Manus-Level" means:** The target capability is an agent that can autonomously complete multi-step, real-world tasks (research, coding, data analysis) with real-time streaming output, reliable tool use across 10+ consecutive turns, and context-aware long-horizon planning — matching the experience of commercial agents like [Manus](https://manus.im) (an autonomous AI agent by Manus AI) or Claude Sonnet in day-to-day productivity tasks.
 
