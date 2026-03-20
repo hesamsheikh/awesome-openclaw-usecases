@@ -96,6 +96,12 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 |------|-------------|
 | [Polymarket Autopilot](usecases/polymarket-autopilot.md) | Automated paper trading on prediction markets with backtesting, strategy analysis, and daily performance reports. |
 
+## Cost & Optimization
+
+| Use Case | Description |
+|----------|------------|
+| [Cost Estimation](https://calculator.guardclaw.dev/) | Estimate OpenClaw setup cost before running agents to avoid unexpected spend |
+
 ## 🤝 Contributing
 
 We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
