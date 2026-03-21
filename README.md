@@ -40,6 +40,7 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 | Name | Description |
 |------|-------------|
 | [Goal-Driven Autonomous Tasks](usecases/overnight-mini-app-builder.md) | Brain dump your goals and have your agent autonomously generate, schedule, and complete daily tasks — including building surprise mini-apps overnight. |
+| [AI YouTube Video Editing](usecases/ai-youtube-video-editing.md) | Automatically remove pauses, filler words, and dead air from raw YouTube recordings using Tubeify's AI API. |
 | [YouTube Content Pipeline](usecases/youtube-content-pipeline.md) | Automate video idea scouting, research, and tracking for a YouTube channel. |
 | [Multi-Agent Content Factory](usecases/content-factory.md) | Run a multi-agent content pipeline in Discord — research, writing, and thumbnail agents working in dedicated channels. |
 | [Autonomous Game Dev Pipeline](usecases/autonomous-game-dev-pipeline.md) | Full lifecycle management of educational game development: from backlog selection to implementation, registration, documentation, and git commit. Enforces "Bugs First" policy. |
@@ -49,8 +50,10 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 
 | Name | Description |
 |------|-------------|
+| [Autonomous Domain Registration](usecases/autonomous-domain-registration.md) | Let your agent check availability and register ICANN domains programmatically — no browser, no CAPTCHA, no manual steps. |
 | [n8n Workflow Orchestration](usecases/n8n-workflow-orchestration.md) | Delegate API calls to n8n workflows via webhooks — the agent never touches credentials, and every integration is visual and lockable. |
 | [Self-Healing Home Server](usecases/self-healing-home-server.md) | Run an always-on infrastructure agent with SSH access, automated cron jobs, and self-healing capabilities across your home network. |
+| [Domain Name Registration](usecases/domain-name-registration.md) | Register domain names across 1000+ TLDs — check availability, compare pricing, and complete registration via your OpenClaw agent. |
 
 ## Productivity
 
