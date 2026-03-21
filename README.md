@@ -51,8 +51,8 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 |------|-------------|
 | [n8n Workflow Orchestration](usecases/n8n-workflow-orchestration.md) | Delegate API calls to n8n workflows via webhooks — the agent never touches credentials, and every integration is visual and lockable. |
 | [Self-Healing Home Server](usecases/self-healing-home-server.md) | Run an always-on infrastructure agent with SSH access, automated cron jobs, and self-healing capabilities across your home network. |
-| [Sandboxed Multi-Bot Management](usecases/sandboxed-multi-bot-management.md) | Run multiple OpenClaw bots in isolated Docker containers with a native GUI — sandboxed by default, no CLI required. [ClawPier](https://github.com/SebastianElvis/clawpier) |
-| [Sandboxed Multi-Bot Management](usecases/sandboxed-multi-bot-management.md) | Run multiple OpenClaw bots in isolated Docker containers with a native GUI — sandboxed by default, no CLI required. [ClawPier](https://github.com/SebastianElvis/clawpier) |
+| [Running Bots in Docker Sandboxes](usecases/sandboxed-multi-bot-management.md) | Manage multiple OpenClaw bots via a native GUI, with each bot isolated in its own Docker container — network disabled by default. [ClawPier](https://github.com/SebastianElvis/clawpier) |
+| [Running Bots in Docker Sandboxes](usecases/sandboxed-multi-bot-management.md) | Manage multiple OpenClaw bots via a native GUI, with each bot isolated in its own Docker container — network disabled by default. [ClawPier](https://github.com/SebastianElvis/clawpier) |
 
 ## Productivity
 
