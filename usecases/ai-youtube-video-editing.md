@@ -4,10 +4,10 @@
 Solo YouTube creators spend hours manually scrubbing through raw recordings to cut dead air, filler words, and long pauses before uploading. This is tedious, repetitive work that an AI agent can fully automate.
 
 ## What It Does
-Use OpenClaw with the Tubeify skill to submit a raw video URL, pay 2 USDC, and receive a polished, trimmed video back in minutes — no manual editing, no NLE software required.
+Use OpenClaw with the Tubeify skill to submit a raw video URL and receive a polished, trimmed video back in minutes — no manual editing, no NLE software required.
 
 ## Prompts
-```
+```text
 Edit my latest recording at [VIDEO_URL]. Remove all pauses longer than 0.5s and filler words. Keep speed at 1.0x.
 ```
 
