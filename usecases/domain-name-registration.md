@@ -8,7 +8,7 @@ Registering a domain usually means navigating clunky registrar websites, compari
 
 ## What It Does
 
-Lets your OpenClaw agent handle the entire domain registration workflow:
+Let your OpenClaw agent handle the entire domain registration workflow:
 
 - **Check availability** of any domain across 1000+ TLDs
 - **Compare pricing** across different TLDs to find the best deal
