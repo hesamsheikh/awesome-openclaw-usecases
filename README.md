@@ -49,7 +49,7 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 
 | Name | Description |
 |------|-------------|
-| [Autonomous Domain Registration](usecases/autonomous-domain-registration.md) | Let your agent check availability, pay with USDC on-chain, and register ICANN domains without any human interaction. |
+| [Autonomous Domain Registration](usecases/autonomous-domain-registration.md) | Let your agent check availability and register ICANN domains programmatically — no browser, no CAPTCHA, no manual steps. |
 | [n8n Workflow Orchestration](usecases/n8n-workflow-orchestration.md) | Delegate API calls to n8n workflows via webhooks — the agent never touches credentials, and every integration is visual and lockable. |
 | [Self-Healing Home Server](usecases/self-healing-home-server.md) | Run an always-on infrastructure agent with SSH access, automated cron jobs, and self-healing capabilities across your home network. |
 | [Domain Name Registration](usecases/domain-name-registration.md) | Register domain names across 1000+ TLDs — check availability, compare pricing, and complete registration via your OpenClaw agent. |
