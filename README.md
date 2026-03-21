@@ -34,7 +34,7 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 | [X Account Analysis](usecases/x-account-analysis.md) | Get a qualitative analysis of your X account.|
 | [Multi-Source Tech News Digest](usecases/multi-source-tech-news-digest.md) | Automatically aggregate and deliver quality-scored tech news from 109+ sources (RSS, Twitter/X, GitHub, web search) via natural language. |
 | [X/Twitter Automation](usecases/x-twitter-automation.md) | Post tweets, reply, like, retweet, follow, DM, search, extract data, run giveaways, and monitor accounts — all from chat via the TweetClaw plugin. |
-| [TensorsLab 小红书营销全自动工作流](usecases/tensorslab-xiaohongshu-marketing.md) | TensorsLab + 小红书营销全自动工作流，支持热点抓取，自动生成小红书文案 + 1:1 方形 cute 风格配图，自动归档到飞书多维表格，每日定时自动产出热点内容。汤圆是妈咪最可爱的卖萌小助手🥰 |
+| [TensorsLab 小红书营销全自动工作流](usecases/tensorslab-xiaohongshu-marketing.md) | TensorsLab + 小红书：自动生成文案与配图并归档到飞书多维表格 |
 
 ## Creative & Building
 
