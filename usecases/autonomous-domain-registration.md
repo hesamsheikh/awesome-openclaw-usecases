@@ -7,7 +7,7 @@ Registering domains for projects typically requires browser interaction, CAPTCHA
 Use OpenClaw with the LobsterDomains skill to let your agent check domain availability, pay with on-chain USDC, and register ICANN domains (.com, .xyz, .org, 1000+ TLDs) — all programmatically with no human in the loop.
 
 ## Prompts
-```
+```text
 Check if [DOMAIN].com is available and register it if so. Pay with USDC from my wallet.
 ```
 
