@@ -52,6 +52,7 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 |------|-------------|
 | [n8n Workflow Orchestration](usecases/n8n-workflow-orchestration.md) | Delegate API calls to n8n workflows via webhooks — the agent never touches credentials, and every integration is visual and lockable. |
 | [Self-Healing Home Server](usecases/self-healing-home-server.md) | Run an always-on infrastructure agent with SSH access, automated cron jobs, and self-healing capabilities across your home network. |
+| [Agent Security Scanning](usecases/agent-security-scanning.md) | Scan skills and plugins before installation with ClawGuard — prompt injection, PII, supply chain attacks. 285+ threat patterns. |
 
 ## Productivity
 
@@ -96,6 +97,7 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 | Name | Description |
 |------|-------------|
 | [Polymarket Autopilot](usecases/polymarket-autopilot.md) | Automated paper trading on prediction markets with backtesting, strategy analysis, and daily performance reports. |
+| [AI Stock Analysis](usecases/ai-stock-analysis.md) | Analyze stocks across US/CN/HK markets with 8 AI-driven trading strategies using FinClaw's multi-agent architecture. |
 
 ## 🤝 Contributing
 
