@@ -94,4 +94,4 @@ Mark completed habits with ✓ and missed with ✗.
 - [Telegram Bot API](https://core.telegram.org/bots/api)
 - [Twilio SMS API](https://www.twilio.com/docs/sms)
 - [Google Sheets API](https://developers.google.com/sheets/api)
-- [Buffy Agent on ClawHub](https://clawhub.ai/phantue2002/buffy-agent)
+- [Buffy Agent on ClawHub (third-party example)](https://clawhub.ai/phantue2002/buffy-agent)
