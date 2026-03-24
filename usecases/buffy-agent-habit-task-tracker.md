@@ -23,7 +23,7 @@ Habit and task apps require you to open them. Reminders are easy to dismiss. The
 
 ## How to Set It Up
 
-1. Install the Buffy Agent skill from [ClawhHub](https://clawhub.ai/phantue2002/buffy-agent) and add your `BUFFY_API_KEY`.
+1. Install the Buffy Agent skill from [ClawHub](https://clawhub.ai/phantue2002/buffy-agent) and add your `BUFFY_API_KEY`.
 
 2. Start tracking habits with plain English:
 ```text
