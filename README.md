@@ -96,6 +96,11 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 |------|-------------|
 | [Polymarket Autopilot](usecases/polymarket-autopilot.md) | Automated paper trading on prediction markets with backtesting, strategy analysis, and daily performance reports. |
 
+## XVARY Stock Research
+
+- [XVARY Stock Research](https://github.com/xvary-research/claude-code-stock-analysis-skill) — Claude Code skill for public SEC EDGAR + market data: `/analyze`, `/score`, `/compare`. MIT.
+
+
 ## 🤝 Contributing
 
 We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
