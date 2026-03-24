@@ -72,12 +72,11 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 | [OpenClaw as Desktop Cowork](usecases/aionui-cowork-desktop.md) | Use OpenClaw as a desktop Cowork app — unified UI, multi-agent, MCP once, WebUI/Telegram/Lark/DingTalk. When OpenClaw is down, fix it remotely via Telegram or WebUI using the built-in OpenClaw deployment expert (install, detect, repair). |
 | [Custom Morning Brief](usecases/custom-morning-brief.md) | Get a fully customized daily briefing — news, tasks, content drafts, and AI-recommended actions — texted to you every morning. |
 | [Automated Meeting Notes & Action Items](usecases/meeting-notes-action-items.md) | Turn meeting transcripts into structured summaries and automatically create tasks in Jira, Linear, or Todoist — assigned to the right person. |
-| [Habit Tracker & Accountability Coach](usecases/habit-tracker-accountability-coach.md) | Proactive daily check-ins via Telegram or SMS that track habits, maintain streaks, and adapt their tone based on your progress. |
+| [Habit Tracker & Accountability Coach](usecases/habit-tracker-accountability-coach.md) | Proactive daily check-ins via Telegram or SMS that track habits, maintain streaks, and adapt their tone based on your progress, with optional task/routine extensions. |
 | [Second Brain](usecases/second-brain.md) | Text anything to your bot to remember it, then search through all your memories in a custom Next.js dashboard. |
 | [Event Guest Confirmation](usecases/event-guest-confirmation.md) | Call a list of event guests one-by-one to confirm attendance, collect notes, and compile a summary — fully automated via AI voice calls. |
 | [Phone Call Notifications](usecases/phone-call-notifications.md) | Turn your agent's alerts into real phone calls — morning briefings, price drops, urgent emails — with two-way conversation. |
 | [Local CRM Framework](usecases/local-crm-framework.md) | Turn OpenClaw into a fully local CRM and sales automation platform with `npx denchclaw` — DuckDB, browser automation, multi-view UI, and natural language queries. |
-| [Buffy Agent — Habit, Task & Routine Tracker](usecases/buffy-agent-habit-task-tracker.md) | A personal behavior engine that tracks habits, tasks, and routines via natural language — synced across OpenClaw, Telegram, Slack, and ChatGPT from a single API. |
 
 ## Research & Learning
 
