@@ -63,4 +63,4 @@ If I mark something done in Slack, reflect it everywhere.
 ## Related Links
 
 - [Buffy Agent Website](https://www.buffyai.org/)
-- [Buffy Agent on ClawhHub](https://clawhub.ai/phantue2002/buffy-agent)
+- [Buffy Agent on ClawHub](https://clawhub.ai/phantue2002/buffy-agent)
