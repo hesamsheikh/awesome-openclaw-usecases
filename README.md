@@ -97,6 +97,7 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 | Name | Description |
 |------|-------------|
 | [Polymarket Autopilot](usecases/polymarket-autopilot.md) | Automated paper trading on prediction markets with backtesting, strategy analysis, and daily performance reports. |
+| [Daily Business Briefing](usecases/daily-business-briefing.md) | Pull revenue, subscribers, churn, and order data from Stripe/Shopify/Gumroad every morning into a single briefing message. |
 
 ## 🤝 Contributing
 
