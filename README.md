@@ -46,6 +46,12 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 | [Podcast Production Pipeline](usecases/podcast-production-pipeline.md) | Automate the full podcast workflow — guest research, episode outlines, show notes, and social media promo — from topic to publish-ready assets. |
 | [AI Video Editing via Chat](usecases/ai-video-editing.md) | Edit videos by describing changes in natural language — trim, merge, add music, subtitles, color grade, crop to vertical. No timeline, no GUI. |
 
+## AI & Open-Source Models
+
+| Name | Description |
+|------|-------------|
+| [Manus-Level Agent with Ollama](usecases/manusilized-ollama-agent.md) | Run a fully autonomous, Manus-quality AI agent using only open-source models (GLM-5, Qwen3, DeepSeek V3.2) via Ollama — real-time streaming, reliable tool use, and unlimited task length. No API keys required. |
+
 ## Infrastructure & DevOps
 
 | Name | Description |
