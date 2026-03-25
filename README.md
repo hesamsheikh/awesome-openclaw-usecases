@@ -11,7 +11,7 @@
 <br />
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Use Cases](https://img.shields.io/badge/usecases-42-blue?style=flat-square)
+![Use Cases](https://img.shields.io/badge/usecases-44-blue?style=flat-square)
 ![Last Update](https://img.shields.io/github/last-commit/hesamsheikh/awesome-openclaw-usecases?label=Last%20Update&style=flat-square)
 [![Follow on X](https://img.shields.io/badge/Follow%20on-X-000000?style=flat-square&logo=x)](https://x.com/Hesamation)
 [![Discord](https://img.shields.io/badge/Discord-Open%20Source%20AI%20Builders-5865F2?style=flat-square&logo=discord&logoColor=white)](https://discord.gg/vtJykN3t)
@@ -97,6 +97,7 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 | Name | Description |
 |------|-------------|
 | [Polymarket Autopilot](usecases/polymarket-autopilot.md) | Automated paper trading on prediction markets with backtesting, strategy analysis, and daily performance reports. |
+| [Daily Business Briefing](usecases/daily-business-briefing.md) | Pull revenue, subscribers, churn, and order data from Stripe, Shopify, Lemon Squeezy, or Gumroad every morning into a single briefing message. |
 
 ## 🤝 Contributing
 
