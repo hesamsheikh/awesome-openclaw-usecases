@@ -53,6 +53,7 @@
 |------|-------------|
 | [n8n 工作流编排](usecases/n8n-workflow-orchestration.md) | 通过 webhook 将 API 调用委托给 n8n 工作流 —— 智能体从不接触凭证，每个集成都是可视化的且可锁定。 |
 | [自愈家庭服务器](usecases/self-healing-home-server.md) | 运行一个始终在线的基础设施智能体，具有 SSH 访问权限、自动化 cron 作业，以及跨家庭网络的自愈能力。 |
+| [OpenClaw 一键卸载工具](https://github.com/jamesyang1121/openclaw-tools) | 支持 Linux/macOS/Windows 三平台一键卸载，兼容历史版本（clawdbot、moltbot、openclaw），有则删除，无则跳过。 |
 
 ## 生产力
 
