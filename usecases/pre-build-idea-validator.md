@@ -4,7 +4,7 @@ Before OpenClaw starts building anything new, it automatically checks whether th
 
 ## What It Does
 
-- Scans 5 real data sources (GitHub, Hacker News, npm, PyPI, Product Hunt) before any code is written
+- Scans real data sources (GitHub, Hacker News, npm, PyPI, Product Hunt) before any code is written
 - Returns a `reality_signal` score (0-100) indicating how crowded the space is
 - Shows top competitors with star counts and descriptions
 - Suggests pivot directions when the space is saturated
@@ -16,28 +16,27 @@ You tell your agent "build me an AI code review tool" and it happily spends 6 ho
 
 ## Skills You Need
 
-- [idea-reality-mcp](https://github.com/mnemox-ai/idea-reality-mcp) — MCP server that scans real data sources and returns a competition score
+- [idea-reality-mcp](https://github.com/mnemox-ai/idea-reality-mcp) — Python package that scans real data sources and returns a competition score
 
 ## How to Set It Up
 
-1. Install idea-reality-mcp:
+> **Note:** OpenClaw does not support MCP servers via config. Instead, use the included CLI wrapper (`idea-check.mjs`) which speaks the MCP stdio protocol directly and can be called via OpenClaw's exec tool.
+
+1. Install the Python package:
 
 ```bash
-uvx idea-reality-mcp
+pip install idea-reality-mcp
 ```
 
-2. Add the MCP server to your OpenClaw config:
+2. Copy the skill files into your OpenClaw skills directory:
 
-```json
-{
-  "mcpServers": {
-    "idea-reality": {
-      "command": "uvx",
-      "args": ["idea-reality-mcp"]
-    }
-  }
-}
 ```
+~/.openclaw/skills/pre-build-idea-validator/
+  SKILL.md          ← tells OpenClaw when and how to use this skill
+  idea-check.mjs    ← CLI wrapper (Node.js, no extra deps)
+```
+
+The skill files are in the [`skills/pre-build-idea-validator/`](../skills/pre-build-idea-validator/) folder of this repo.
 
 3. Add this to your OpenClaw agent instructions:
 
@@ -58,9 +57,9 @@ Rules:
 
 **You:** "Build me a CLI tool for AI code review"
 
-OpenClaw runs `idea_check("AI code review tool")` and responds:
+OpenClaw runs `node {baseDir}/idea-check "AI code review tool"` and responds:
 
-> **reality_signal: 90/100 (very high)**
+> **reality_signal: 90/100 (HIGH competition)**
 >
 > Top competitors:
 > 1. Gitea — 53,940 stars
@@ -78,7 +77,7 @@ OpenClaw runs `idea_check("AI code review tool")` and responds:
 
 **You:** "What about an MCP server for pre-build idea validation?"
 
-> **reality_signal: 8/100 (very low)**
+> **reality_signal: 8/100 (LOW competition)**
 >
 > 0 direct competitors found on PyPI or npm. GitHub has some tangentially related repos but none solve this exact problem.
 >
@@ -86,9 +85,9 @@ OpenClaw runs `idea_check("AI code review tool")` and responds:
 
 ## Variations
 
-- **Deep mode for serious decisions**: Use `depth="deep"` to scan all 5 sources in parallel (GitHub + HN + npm + PyPI + Product Hunt) for major project decisions.
+- **Deep mode for serious decisions**: Use `--depth deep` to scan all 5 sources in parallel (GitHub + HN + npm + PyPI + Product Hunt).
 - **Batch validation**: Before a hackathon, give OpenClaw a list of 10 ideas and have it rank them by `reality_signal` — lowest score = most original opportunity.
-- **Web demo first**: Try without installing at [mnemox.ai/check](https://mnemox.ai/check) to see if the workflow fits your needs.
+- **Web demo first**: Try without installing at [mnemox.ai/check](https://mnemox.ai/check).
 
 ## Key Insights
 
@@ -100,5 +99,5 @@ OpenClaw runs `idea_check("AI code review tool")` and responds:
 ## Related Links
 
 - [idea-reality-mcp GitHub](https://github.com/mnemox-ai/idea-reality-mcp)
-- [Web demo](https://mnemox.ai/check) (try without installing)
+- [Web demo](https://mnemox.ai/check)
 - [PyPI](https://pypi.org/project/idea-reality-mcp/)
