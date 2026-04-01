@@ -34,6 +34,7 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 | [X Account Analysis](usecases/x-account-analysis.md) | Get a qualitative analysis of your X account.|
 | [Multi-Source Tech News Digest](usecases/multi-source-tech-news-digest.md) | Automatically aggregate and deliver quality-scored tech news from 109+ sources (RSS, Twitter/X, GitHub, web search) via natural language. |
 | [X/Twitter Automation](usecases/x-twitter-automation.md) | Post tweets, reply, like, retweet, follow, DM, search, extract data, run giveaways, and monitor accounts — all from chat via the TweetClaw plugin. |
+| [Auto WeChat Official Account Publishing](usecases/wechat-auto-publish.md) | Publish markdown from Feishu/Telegram/Web UI to WeChat Official Account with QR login + confirm flow via OpenClaw and Gateway. |
 
 ## Creative & Building
 
