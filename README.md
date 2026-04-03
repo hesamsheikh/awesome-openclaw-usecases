@@ -78,6 +78,7 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 | [Event Guest Confirmation](usecases/event-guest-confirmation.md) | Call a list of event guests one-by-one to confirm attendance, collect notes, and compile a summary — fully automated via AI voice calls. |
 | [Phone Call Notifications](usecases/phone-call-notifications.md) | Turn your agent's alerts into real phone calls — morning briefings, price drops, urgent emails — with two-way conversation. |
 | [Local CRM Framework](usecases/local-crm-framework.md) | Turn OpenClaw into a fully local CRM and sales automation platform with `npx denchclaw` — DuckDB, browser automation, multi-view UI, and natural language queries. |
+| [Autonomous Deal Closer](usecases/autonomous-deal-closer.md) | Chain Firecrawl + email + Cal.com + Signbee MCP servers into one pipeline that researches prospects, sends outreach, books meetings, drafts contracts, and collects signatures. |
 
 ## Research & Learning
 
