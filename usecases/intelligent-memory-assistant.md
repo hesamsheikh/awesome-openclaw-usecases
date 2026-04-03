@@ -63,7 +63,7 @@ MEMORY SYSTEM
 
 BEFORE EVERY RESPONSE, READ:
 1. ~/.openclaw/workspace/MEMORY.md (core context)
-2. ~/.openclaw/workspace/memory/$(date +%Y-%m-%d).md (current work)
+2. ~/.openclaw/workspace/memory/$(date +%Y-%m-%d).md (current work, e.g., 2026-04-03.md)
 3. ~/.openclaw/workspace/decisions.md (past decisions)
 4. ~/.openclaw/workspace/contacts.md (people)
 
