@@ -54,6 +54,7 @@ touch ~/.openclaw/workspace/contacts.md
 
 Create system prompt file:
 ```bash
+mkdir -p ~/.openclaw/agents/[YOUR-AGENT-ID]
 cat > ~/.openclaw/agents/[YOUR-AGENT-ID]/system-prompt.txt << 'PROMPT'
 You are a memory-driven, context-aware personal AI assistant.
 
@@ -62,7 +63,7 @@ MEMORY SYSTEM
 
 BEFORE EVERY RESPONSE, READ:
 1. ~/.openclaw/workspace/MEMORY.md (core context)
-2. ~/.openclaw/workspace/memory/[latest-date].md (current work)
+2. ~/.openclaw/workspace/memory/$(date +%Y-%m-%d).md (current work)
 3. ~/.openclaw/workspace/decisions.md (past decisions)
 4. ~/.openclaw/workspace/contacts.md (people)
 
@@ -153,3 +154,4 @@ cat > ~/.openclaw/workspace/MEMORY.md << 'EOF'
 - Main projects: [List your active projects]
 - Preferences: [Communication style, working preferences]
 - Core goals: [Primary objectives]
+EOF
