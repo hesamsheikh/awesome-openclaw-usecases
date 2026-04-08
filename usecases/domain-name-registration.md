@@ -8,16 +8,16 @@ Registering a domain usually means navigating clunky registrar websites, compari
 
 ## What It Does
 
-Use OpenClaw with the LobsterDomains skill to let your agent handle the entire domain registration workflow autonomously:
+Use OpenClaw with the LobsterDomains skill to let your agent handle the domain registration workflow, with optional user confirmation for pricing:
 
 - **Check availability** of any domain across 1000+ TLDs
 - **Compare pricing** across different TLDs to find the best deal
-- **Register domains** programmatically — pay with on-chain USDC (no credit card needed)
+- **Register domains** programmatically — no browser interaction, no CAPTCHA, no manual forms
 - **Track orders** and check registration status
 
 ## Skills Needed
 
-[`lobsterdomains`](https://clawhub.ai/esokullu/lobsterdomains) — ICANN domain registration via crypto-friendly API. Requires a `LOBSTERDOMAINS_API_KEY`.
+[`lobsterdomains`](https://clawhub.ai/esokullu/lobsterdomains) — ICANN domain registration API. Requires a `LOBSTERDOMAINS_API_KEY`.
 
 Get your API key at [lobsterdomains.xyz](https://lobsterdomains.xyz)
 
@@ -36,7 +36,7 @@ Is example.com available?
 Find me a .ai domain for my startup called NeuralFlow, under $50/year
 ```
 ```text
-Register openagent.dev if it's available. Pay with USDC from my wallet.
+Register openagent.dev if it's available.
 ```
 ```text
 What TLDs are available for 'openagent' under $20?
@@ -46,8 +46,8 @@ What TLDs are available for 'openagent' under $20?
 
 1. Agent checks domain availability + live price via `GET /api/v1/domains/check`
 2. Confirms price with user (or proceeds autonomously if pre-approved)
-3. Sends USDC payment on-chain to Ethereum/Arbitrum/Base
-4. Submits tx hash to `POST /api/v1/domains/register`
+3. Completes payment via the configured payment method
+4. Submits confirmation to `POST /api/v1/domains/register`
 5. Receives DNS management credentials
 
 ## Related Links
