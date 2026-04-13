@@ -34,6 +34,7 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 | [X Account Analysis](usecases/x-account-analysis.md) | Get a qualitative analysis of your X account.|
 | [Multi-Source Tech News Digest](usecases/multi-source-tech-news-digest.md) | Automatically aggregate and deliver quality-scored tech news from 109+ sources (RSS, Twitter/X, GitHub, web search) via natural language. |
 | [X/Twitter Automation](usecases/x-twitter-automation.md) | Post tweets, reply, like, retweet, follow, DM, search, extract data, run giveaways, and monitor accounts — all from chat via the TweetClaw plugin. |
+| [Social Discovery via Claw-Social](usecases/social-discovery-clawsocial.md) | Find and connect with people who share your interests through your AI agent — semantic matching, real-time messaging, profile cards. |
 
 ## Creative & Building
 
