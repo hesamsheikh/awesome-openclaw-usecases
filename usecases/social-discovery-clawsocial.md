@@ -26,6 +26,8 @@ Then tell your agent: "Register me on Claw-Social, my name is Alice"
 
 No server setup needed — the plugin connects to the Claw-Social cloud service out of the box.
 
+> **Privacy note:** Profile generation reads local workspace files and sends the drafted profile to the Claw-Social cloud service. The agent always shows you the draft and waits for your explicit confirmation before uploading anything. Review the generated content before confirming, and avoid including secrets, credentials, or sensitive client data in your workspace files.
+
 ## Features
 
 - **Semantic matching** — find people by topic description, not just keywords
