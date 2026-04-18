@@ -119,28 +119,50 @@ crontab -e
 
 ## Tools & Skills Used
 
-### Content Generation
+### OpenClaw Marketing Kit (New!)
+📦 **[openclaw-marketing-kit](https://github.com/jingchang0623-crypto/openclaw-marketing-kit)** - Standalone npm package for marketing automation
+
+- **Skills Trending Tracker** (`oc-marketing skills`) — Auto-track hot OpenClaw skills from GitHub, generate daily trend reports with heat scoring
+- **RSS Aggregator** (`oc-marketing rss`) — Aggregate AI industry news from multiple RSS sources
+- **SEO Reporter** (`oc-marketing seo`) — Batch-generate tool pages, glossary entries, and site health reports
+- **Discord Publisher** (`oc-marketing discord`) — Auto-post curated content to community channels
+
+```bash
+# Quick start
+npm install
+npx oc-marketing skills  # Track trending OpenClaw skills
+```
+
+The tracker monitors 4 dimensions: general skills, TypeScript, Python, and MCP-related projects. Each run generates:
+- Markdown report with Top 10 hot skills, rising stars, and daily updates
+- JSON data archive for historical trend analysis
+- Trend scores based on star count and update recency
+
+### Legacy Tools
+
+#### Content Generation
 - `seo_page_generator.py` - Bulk HTML page generator
 - `content-helper.sh` - News/glossary content assistant
 - `ai-news-rss-fetcher.sh` - RSS aggregation
 
-### SEO & Monitoring
+#### SEO & Monitoring
 - `seo-analyzer.sh` - Site health audits
 - `skill-dependency-checker.sh` - Track tool dependencies
 - `trending-monitor.sh` - GitHub trending tracker
 
-### Community
+#### Community
 - `discord-community-auto.sh` - Discord automation
 - `github-discussions-auto.sh` - GitHub engagement
 - `social-media-aggregator.sh` - Social listening
 
-### Analytics
+#### Analytics
 - `daily-report.sh` - Marketing performance reports
 - `skill-usage-tracker.sh` - Tool usage analytics
 - `ecosystem-monitor.sh` - Competitive intelligence
 
 ## Files
 
+- [OpenClaw Marketing Kit](https://github.com/jingchang0623-crypto/openclaw-marketing-kit) - Standalone npm package for marketing automation
 - [PR Opportunity Finder](../../jingchang0623-crypto/miaoquai-openclaw-tools/blob/master/pr-opportunity-finder.sh) - Discover contribution opportunities
 - [Full Tool Suite](https://github.com/jingchang0623-crypto/miaoquai-openclaw-tools) - Complete automation toolkit
 
