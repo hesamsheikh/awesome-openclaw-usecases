@@ -108,3 +108,19 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 > Please only submit usecases you have already worked with and verified that works (at least for a day). We value real ideas that make our lives actually better, not worse!
 >
 > **Note:** We do not accept use cases related to crypto.
+
+
+---
+
+## SKY-lv Skills
+
+30+ battle-tested OpenClaw skills for agent development. MIT Licensed.
+
+- [skylv-agent-evaluator](https://github.com/SKY-lv/agent-evaluator) - Score agent behavior
+- [skylv-metacognition-engine](https://github.com/SKY-lv/metacognition-engine) - Self-reflection
+- [skylv-self-healing-agent](https://github.com/SKY-lv/self-healing-agent) - Auto-repair errors
+- [skylv-cost-guard](https://github.com/SKY-lv/cost-guard) - API cost optimization
+- [skylv-browser-automation-agent](https://github.com/SKY-lv/browser-automation-agent) - Browser automation
+- [skylv-diff-viewer](https://github.com/SKY-lv/diff-viewer) - Diff comparison
+
+[ClawHub](https://clawhub.ai/skylv) | [Landing](https://sky-lv.github.io/awesome-openclaw-skills)
