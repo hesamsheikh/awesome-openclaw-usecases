@@ -23,6 +23,7 @@ git clone https://github.com/caomengxuan666/perf-skills.git .claude/skills/linux
 2. Or use with Claude Code:
 ```
 /plugin marketplace add caomengxuan666/perf-skills
+/plugin install linux-perf@caomengxuan666/perf-skills
 ```
 
 3. Then prompt your agent:
