@@ -20,8 +20,15 @@ What to use it for:
 git clone https://github.com/caomengxuan666/perf-skills.git .claude/skills/linux-perf
 ```
 
-2. Or use with Claude Code:
+2. Alternatively, download the skill file directly:
+```bash
+curl -O https://raw.githubusercontent.com/caomengxuan666/perf-skills/main/.claude/skills/linux-perf/SKILL.md
+mkdir -p .claude/skills/linux-perf
+mv SKILL.md .claude/skills/linux-perf/
 ```
+
+4. Or use with Claude Code:
+```bash
 /plugin marketplace add caomengxuan666/perf-skills
 /plugin install linux-perf@caomengxuan666/perf-skills
 ```
