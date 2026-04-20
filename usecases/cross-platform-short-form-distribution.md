@@ -1,69 +1,56 @@
-# Cross-Platform Short-Form Video Distribution
+# Cross-Platform Short-Form Distribution
 
-You've built a short-form video pipeline that produces TikTok-ready clips. But your audience is also on YouTube Shorts, Instagram Reels, and Facebook Reels. Uploading the same video to 4 platforms manually means logging into each one, copying captions, adjusting hashtags, and waiting for processing — a 20-minute task per video that kills the automation advantage.
+Upload one video to TikTok, YouTube Shorts, and Instagram Reels in sequence with per-platform captions and staggered timing — all automated.
 
 ## Pain Point
 
-Short-form video content is platform-agnostic — a 9:16 vertical clip works on TikTok, YouTube Shorts, Instagram Reels, and Facebook Reels. But each platform has its own upload flow, caption limits, hashtag rules, and posting times. Cross-posting manually is tedious, and using a multi-platform scheduler adds cost and loses the ability to customize per-platform captions.
+Short-form creators need to post the same video to 3+ platforms, each with different caption styles, hashtag limits, and optimal posting windows. Doing this manually means logging into each platform, rewriting captions for each audience, and remembering the timing — repeated several times a day. It's a full-time job that eats into actual content creation time.
 
 ## What It Does
 
-A single scheduled job uploads one video to multiple platforms in sequence, with per-platform caption customization:
+- **Single source distribution** — One video gets uploaded to TikTok, YouTube Shorts, and Instagram Reels from a single command
+- **Per-platform caption generation** — Automatically adapts the caption for each platform's audience and format:
+  - TikTok: casual tone, trending hashtags, 150-char limit
+  - YouTube Shorts: descriptive with SEO keywords, #Shorts tag
+  - Instagram Reels: aesthetic tone, hashtag clusters, CTA in caption
+- **Staggered posting schedule** — Posts to each platform at different times (e.g., TikTok now, YouTube in 2 hours, Instagram in 4 hours) to maximize reach and avoid algorithm penalties for simultaneous cross-posting
+- **Cron-based automation** — Entire distribution pipeline runs on a schedule via JSON cron jobs
+- **Status tracking** — Per-platform posting metadata prevents double-posts and tracks what's been published where
 
-- **Unified queue** — One directory of rendered clips, one scheduling system
-- **Per-platform captions** — TikTok gets Thai + hashtags, YouTube gets English description + tags, Instagram gets a shorter caption with different hashtag mix
-- **Sequential upload** — TikTok first (via Playwright), then YouTube Shorts (via API or Playwright), then Instagram Reels (via Meta Graph API or Playwright)
-- **Status tracking** — JSON metadata per video per platform tracks upload status, video URL, and timestamp
-- **Staggered timing** — Optional delays between platform uploads to avoid detection patterns
+## Prompts
+
+**Distribute to all platforms:**
+```text
+Distribute this video to TikTok, YouTube Shorts, and Instagram Reels with platform-optimized captions. Post TikTok now, YouTube in 2 hours, Instagram in 4 hours.
+```
+
+**Custom schedule:**
+```text
+Schedule this video across all platforms. TikTok at 17:30, YouTube Shorts at 19:30, Instagram Reels at 21:30. Generate captions for each platform from the markdown package.
+```
+
+**Check distribution status:**
+```text
+Which platforms has video NP-215 been posted to? Schedule it for any remaining platforms.
+```
 
 ## Skills Needed
 
-- Playwright browser automation (for TikTok and YouTube Studio)
-- YouTube Data API v3 (optional, for YouTube Shorts via API)
-- Meta Graph API (optional, for Instagram Reels via API)
-- Cookie management for browser-based uploads
-- JSON-based cron/scheduling system
-
-## How to Set It Up
-
-1. **Set up per-platform auth:**
-   - TikTok: Export cookies from browser (Netscape → Playwright JSON)
-   - YouTube: OAuth2 client credentials or browser cookies
-   - Instagram: Meta Graph API token with `instagram_content_publish` permission
-
-2. **Create a cross-platform upload script:**
-```text
-Create an upload script that:
-1. Takes a video file path and a platform-agnostic content ID (e.g. NP-224)
-2. Reads per-platform captions from a markdown package file
-3. Uploads to TikTok via Playwright Direct
-4. Uploads to YouTube Shorts via API or Playwright
-5. Uploads to Instagram Reels via Meta Graph API
-6. Writes metadata JSON for each successful upload
-7. Reports any failures with error details
-```
-
-3. **Define caption templates per platform:**
-```text
-For each content piece, generate platform-specific captions:
-- TikTok: Thai text + 5-8 hashtags, under 150 chars
-- YouTube Shorts: English description + tags, SEO-optimized title
-- Instagram Reels: Shorter hook + 10-15 hashtags, CTA to follow
-Store these in the markdown package alongside the video
-```
-
-4. **Schedule via cron:**
-```text
-Schedule cross-platform uploads at optimal times per platform:
-- TikTok: 17:30, 20:30, 23:30 local time
-- YouTube Shorts: 14:00, 18:00 local time
-- Instagram Reels: 12:00, 19:00 local time
-Use the cron scheduler to queue jobs with per-platform timing
-```
+- **Playwright** — For TikTok upload automation (cookies + headless browser)
+- **YouTube OAuth2** — For YouTube Shorts upload via API or Playwright
+- **Instagram automation** — Via Playwright or Meta API for Reels upload
+- **JSON cron system** — For scheduling staggered posts across platforms
+- **File system monitoring** — For detecting new rendered clips and tracking posted metadata
 
 ## Key Insights
 
-- YouTube Shorts has a 60-second limit. TikTok allows up to 10 minutes but 15-60s performs best. Design your clips at 15-30s for maximum cross-platform compatibility.
-- Instagram Reels requires a business/creator account for API access. Browser automation works for personal accounts.
-- Hashtag behavior differs by platform: TikTok favors 3-5 niche hashtags, Instagram favors 10-15 mixed-size hashtags, YouTube uses tags (not hashtags) in the description.
-- Upload one platform at a time and verify before moving to the next. A failure on one platform shouldn't block the others.
+- Staggering posts by 2-4 hours per platform avoids algorithm penalties that some platforms apply when the same video appears everywhere simultaneously
+- Per-platform caption adaptation matters more than most creators think — a TikTok caption style actively hurts performance on YouTube
+- The dedup system tracks by content ID + platform keyword (e.g., "NP-215" + "TikTok") so both TikTok and YouTube jobs coexist in the same queue without collisions
+- One-shot cron jobs auto-complete after execution, keeping the queue clean
+
+## Related Links
+
+- [TikTok Studio](https://www.tiktok.com/tiktokstudio/upload)
+- [YouTube Shorts](https://studio.youtube.com/)
+- [Instagram Reels](https://www.instagram.com/reels/)
