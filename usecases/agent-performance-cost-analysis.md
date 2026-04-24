@@ -1,6 +1,6 @@
 # Agent Performance & Cost Analysis
 
-Find where your OpenClaw agent's tokens are actually going. See which steps burn money on retry loops, which models aren't earning their cost, and whether your last optimization actually made things better or just more expensive.
+Find where your OpenClaw agent’s tokens are really going. Check which steps burn money on retry loops, which models justify their cost, and whether your last optimization improved outcomes or just increased spend.
 
 ## Pain Point
 
