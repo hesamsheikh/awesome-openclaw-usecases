@@ -79,6 +79,12 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 | [Phone Call Notifications](usecases/phone-call-notifications.md) | Turn your agent's alerts into real phone calls — morning briefings, price drops, urgent emails — with two-way conversation. |
 | [Local CRM Framework](usecases/local-crm-framework.md) | Turn OpenClaw into a fully local CRM and sales automation platform with `npx denchclaw` — DuckDB, browser automation, multi-view UI, and natural language queries. |
 
+## Agent Optimization & Observability
+
+| Name | Description |
+|------|-------------|
+| [Agent Performance & Cost Analysis](usecases/agent-performance-cost-analysis.md) | Find where your agent's tokens are actually going — replay runs step by step, score results, and see which optimizations are worth keeping. |
+
 ## Research & Learning
 
 | Name | Description |
