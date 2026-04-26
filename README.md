@@ -45,6 +45,7 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 | [Autonomous Game Dev Pipeline](usecases/autonomous-game-dev-pipeline.md) | Full lifecycle management of educational game development: from backlog selection to implementation, registration, documentation, and git commit. Enforces "Bugs First" policy. |
 | [Podcast Production Pipeline](usecases/podcast-production-pipeline.md) | Automate the full podcast workflow — guest research, episode outlines, show notes, and social media promo — from topic to publish-ready assets. |
 | [AI Video Editing via Chat](usecases/ai-video-editing.md) | Edit videos by describing changes in natural language — trim, merge, add music, subtitles, color grade, crop to vertical. No timeline, no GUI. |
+| [Multi-Agent Editorial Newsroom](usecases/multi-agent-editorial-newsroom.md) | Group chat of writer + critic + judge agents that draft, critique, and ship content — with structural role isolation that keeps the critic from going soft. |
 
 ## Infrastructure & DevOps
 
