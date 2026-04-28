@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/hesamsheikh-awesome-openclaw-usecases-badge.png)](https://mseep.ai/app/hesamsheikh-awesome-openclaw-usecases)
+
 <div align="center">
 
 <img width="1500" height="500" alt="Image" src="https://github.com/user-attachments/assets/4ae57dfb-4f18-4677-9136-43bf93017250" />
