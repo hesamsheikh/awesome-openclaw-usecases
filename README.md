@@ -27,6 +27,9 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 
 ## Social Media
 
+- [OpenClaw Monitor](https://github.com/flik2002/openclaw-monitor) — Real-time AI agent monitoring dashboard for OpenClaw
+
+
 | Name | Description |
 |------|-------------|
 | [Daily Reddit Digest](usecases/daily-reddit-digest.md) | Summarize a curated digest of your favourite subreddits, based on your preferences. |
