@@ -11,7 +11,7 @@
 <br />
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Use Cases](https://img.shields.io/badge/usecases-42-blue?style=flat-square)
+![Use Cases](https://img.shields.io/badge/usecases-43-blue?style=flat-square)
 ![Last Update](https://img.shields.io/github/last-commit/hesamsheikh/awesome-openclaw-usecases?label=Last%20Update&style=flat-square)
 [![Follow on X](https://img.shields.io/badge/Follow%20on-X-000000?style=flat-square&logo=x)](https://x.com/Hesamation)
 [![Discord](https://img.shields.io/badge/Discord-Open%20Source%20AI%20Builders-5865F2?style=flat-square&logo=discord&logoColor=white)](https://discord.gg/vtJykN3t)
@@ -100,6 +100,12 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 | [Skills Quality Analyzer](usecases/skills-quality-analyzer.md) | Analyze 5400+ OpenClaw skills with quality scoring, security checks, and risk detection — find the gems, avoid the traps. |
 | [LaTeX Paper Writing](usecases/latex-paper-writing.md) | Write and compile LaTeX papers conversationally with instant PDF preview — no local TeX installation needed. |
 | [HF Papers Research Discovery](usecases/hf-papers-research-discovery.md) | Discover trending ML papers on Hugging Face, triage by upvotes, and deep-read via arXiv — all conversationally. |
+
+## Cost Optimization
+
+| Name | Description |
+|------|-------------|
+| [Smart Model Router](usecases/smart-model-router.md) | Automatically pick the right model for every task based on complexity. Save up to 70% on token costs with intelligent routing. |
 
 ## Finance & Trading
 
