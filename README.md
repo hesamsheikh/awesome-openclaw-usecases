@@ -11,7 +11,7 @@
 <br />
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Use Cases](https://img.shields.io/badge/usecases-42-blue?style=flat-square)
+![Use Cases](https://img.shields.io/badge/usecases-43-blue?style=flat-square)
 ![Last Update](https://img.shields.io/github/last-commit/hesamsheikh/awesome-openclaw-usecases?label=Last%20Update&style=flat-square)
 [![Follow on X](https://img.shields.io/badge/Follow%20on-X-000000?style=flat-square&logo=x)](https://x.com/Hesamation)
 [![Discord](https://img.shields.io/badge/Discord-Open%20Source%20AI%20Builders-5865F2?style=flat-square&logo=discord&logoColor=white)](https://discord.gg/vtJykN3t)
@@ -24,6 +24,13 @@
 Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **ways it can improve your life**. This is a community collection of real-life use cases for [OpenClaw](https://github.com/openclaw/openclaw).
 
 > **Warning:** OpenClaw skills and third-party dependencies referenced here may have critical security vulnerabilities. Many use cases link to community-built skills, plugins, and external repos that have **not been audited by the maintainer of this list**. Always review skill source code, check requested permissions, and avoid hardcoding API keys or credentials. You are solely responsible for your own security.
+
+## Marketing & Growth
+
+| Name | Description |
+|------|-------------|
+| [AI Marketing Operations Agent](usecases/ai-marketing-operations-agent.md) | Turn OpenClaw into a 24/7 marketing center — automated SEO content generation, trend monitoring, community engagement, and competitive intelligence. |
+| [Agency-Agents Team Templates](usecases/agency-agents-team-templates.md) | Production-ready agent personalities for OpenClaw — Frontend Developer, Backend Architect, AI Engineer, DevOps Automator, and more. Personality-driven, battle-tested workflows. |
 
 ## Social Media
 
@@ -52,6 +59,7 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 |------|-------------|
 | [n8n Workflow Orchestration](usecases/n8n-workflow-orchestration.md) | Delegate API calls to n8n workflows via webhooks — the agent never touches credentials, and every integration is visual and lockable. |
 | [Self-Healing Home Server](usecases/self-healing-home-server.md) | Run an always-on infrastructure agent with SSH access, automated cron jobs, and self-healing capabilities across your home network. |
+| [Skills Dependency Graph](usecases/skills-dependency-graph.md) | Visualize the hidden dependency connections across 5400+ OpenClaw skills — hub analysis, cycle detection, cluster mapping, and export to Mermaid/Graphviz. |
 
 ## Productivity
 
@@ -59,6 +67,7 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 |------|-------------|
 | [Autonomous Project Management](usecases/autonomous-project-management.md) | Coordinate multi-agent projects using STATE.yaml pattern — subagents work in parallel without orchestrator overhead. |
 | [Multi-Channel AI Customer Service](usecases/multi-channel-customer-service.md) | Unify WhatsApp, Instagram, Email, and Google Reviews in one AI-powered inbox with 24/7 auto-responses. |
+| [AI Content Marketing Automation](usecases/ai-content-marketing-automation.md) | 24/7 automated AI marketing operations for content production, SEO optimization, and multi-platform community management. |
 | [Phone-Based Personal Assistant](usecases/phone-based-personal-assistant.md) | Access your AI agent via phone calls, hands-free voice assistance for any phone. |
 | [Inbox De-clutter](usecases/inbox-declutter.md) | Summarize Newsletters and send you a digest as an email. |
 | [Personal CRM](usecases/personal-crm.md) | Automatically discover and track contacts from your email and calendar, with natural language queries. |
