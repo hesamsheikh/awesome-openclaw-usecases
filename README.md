@@ -51,6 +51,7 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 | Name | Description |
 |------|-------------|
 | [n8n Workflow Orchestration](usecases/n8n-workflow-orchestration.md) | Delegate API calls to n8n workflows via webhooks — the agent never touches credentials, and every integration is visual and lockable. |
+| [Cron Task Orchestrator](usecases/cron-task-orchestrator.md) | DAG-based task orchestration for OpenClaw cron jobs — dependency-aware scheduling, smart retries, health checks, and visual dashboard for your automation pipeline. |
 | [Self-Healing Home Server](usecases/self-healing-home-server.md) | Run an always-on infrastructure agent with SSH access, automated cron jobs, and self-healing capabilities across your home network. |
 
 ## Productivity
