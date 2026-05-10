@@ -46,6 +46,7 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 | [Podcast Production Pipeline](usecases/podcast-production-pipeline.md) | Automate the full podcast workflow — guest research, episode outlines, show notes, and social media promo — from topic to publish-ready assets. |
 | [AI Video Editing via Chat](usecases/ai-video-editing.md) | Edit videos by describing changes in natural language — trim, merge, add music, subtitles, color grade, crop to vertical. No timeline, no GUI. |
 
+| [Cyberpunk Data Cards](usecases/cyberpunk-data-cards.md) | Render cyberpunk-themed data visualization cards (investment, e-commerce, content, system) inside OpenClaw chat. Auto-reads SOUL.md for AI identity cards. Zero dependencies. |
 ## Infrastructure & DevOps
 
 | Name | Description |
