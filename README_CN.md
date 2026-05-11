@@ -53,6 +53,7 @@
 |------|-------------|
 | [n8n 工作流编排](usecases/n8n-workflow-orchestration.md) | 通过 webhook 将 API 调用委托给 n8n 工作流 —— 智能体从不接触凭证，每个集成都是可视化的且可锁定。 |
 | [自愈家庭服务器](usecases/self-healing-home-server.md) | 运行一个始终在线的基础设施智能体，具有 SSH 访问权限、自动化 cron 作业，以及跨家庭网络的自愈能力。 |
+| [OpenClaw 记忆仪表板](usecases/openclaw-memory-dashboard.md) | 分析、可视化管理你的智能体记忆系统 — 健康评分、过期检测、膨胀告警和 HTML 仪表板，支持多智能体环境。 |
 
 ## 生产力
 
