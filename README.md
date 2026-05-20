@@ -123,3 +123,10 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 > Please only submit usecases you have already worked with and verified that works (at least for a day). We value real ideas that make our lives actually better, not worse!
 >
 > **Note:** We do not accept use cases related to crypto.
+
+## Security & Optimization
+
+| Name | Description |
+|------|-------------|
+| [OpenClaw Skill Quality Scanner](usecases/openclaw-skill-quality-scanner.md) | Automated security and quality scanning for Skills, A-F scoring |
+| [OpenClaw Context Optimizer](usecases/openclaw-context-optimizer.md) | Context compression tool, 40-90% token savings |
