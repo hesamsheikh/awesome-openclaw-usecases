@@ -97,6 +97,7 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 | Name | Description |
 |------|-------------|
 | [Polymarket Autopilot](usecases/polymarket-autopilot.md) | Automated paper trading on prediction markets with backtesting, strategy analysis, and daily performance reports. |
+| [Automated Bounty Hunting](usecases/automated-bounty-hunting.md) | Self-evolving bounty hunter that searches GitHub, forks repos, submits PRs, and earns crypto bounties 24/7. |
 
 ## 🤝 Contributing
 
