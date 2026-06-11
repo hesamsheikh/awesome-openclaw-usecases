@@ -112,5 +112,6 @@ The report contract gives you a stable record:
 ## Related Links
 
 - [Ariadne Loop](https://github.com/zhangzeyu99-web/ariadne-loop)
+- [Ariadne Loop for OpenClaw](https://zhangzeyu99-web.github.io/ariadne-loop/openclaw.html)
 - [Ariadne Loop browser builder](https://zhangzeyu99-web.github.io/ariadne-loop/playground.html)
 - [OpenClaw](https://github.com/openclaw/openclaw)
