@@ -66,6 +66,7 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 | [Multi-Channel Personal Assistant](usecases/multi-channel-assistant.md) | Route tasks across Telegram, Slack, email, and calendar from a single AI assistant. |
 | [Project State Management](usecases/project-state-management.md) | Event-driven project tracking with automatic context capture, replacing static Kanban boards. |
 | [Dynamic Dashboard](usecases/dynamic-dashboard.md) | Real-time dashboard with parallel data fetching from APIs, databases, and social media. |
+| [AI Agent Project Dashboard](usecases/ai-agent-project-dashboard.md) | Multi-project workspace for AI agents with lazy-loaded context, spec-driven development from sticky notes, and agent-native Kanban — no more re-explaining your project every session. |
 | [Todoist Task Manager](usecases/todoist-task-manager.md) | Maximize agent transparency by syncing reasoning and progress logs to Todoist. |
 | [Phone-Based Personal Assistant](usecases/phone-based-personal-assistant.md) | Access OpenClaw from any phone via voice call or SMS. Get calendar updates, Jira tickets, and web search results hands-free. |
 | [Family Calendar & Household Assistant](usecases/family-calendar-household-assistant.md) | Aggregate all family calendars into a morning briefing, monitor messages for appointments, and manage household inventory. |
