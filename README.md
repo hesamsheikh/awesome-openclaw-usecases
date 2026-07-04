@@ -104,6 +104,7 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 - Add a new usecase
 - Improve existing ones
+- **[Context Kit](https://github.com/JDDavenport/context-kit)** — Personal Context Artifacts: 4 Markdown templates + 5 Claude Code skills for giving AI agents deep personal context. MIT, one-command install.
 
 > Please only submit usecases you have already worked with and verified that works (at least for a day). We value real ideas that make our lives actually better, not worse!
 >
