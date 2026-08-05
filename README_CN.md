@@ -77,6 +77,7 @@
 | [活动嘉宾确认](usecases/event-guest-confirmation.md) | 逐一呼叫活动嘉宾名单以确认出席、收集备注并编译摘要 —— 通过 AI 语音通话完全自动化。 |
 | [自动会议笔记与行动项](usecases/meeting-notes-action-items.md) | 将会议记录转换为结构化摘要，并自动在 Jira、Linear 或 Todoist 中创建任务 —— 分配给正确的人。 |
 | [习惯追踪与责任教练](usecases/habit-tracker-accountability-coach.md) | 通过 Telegram 或 SMS 进行主动每日签到，追踪习惯、保持连续记录，并根据你的进度调整语气。 |
+| [通过 qwen-audio-agent 语音控制](usecases/voice-control-openclaw.md) | 免提与你的 OpenClaw 网关对话——全双工语音交流，支持唤醒词、随时打断，异步任务结果自动读回给你。 |
 
 ## 研究与学习
 
