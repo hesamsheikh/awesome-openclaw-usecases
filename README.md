@@ -61,6 +61,7 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 | [Multi-Channel AI Customer Service](usecases/multi-channel-customer-service.md) | Unify WhatsApp, Instagram, Email, and Google Reviews in one AI-powered inbox with 24/7 auto-responses. |
 | [Phone-Based Personal Assistant](usecases/phone-based-personal-assistant.md) | Access your AI agent via phone calls, hands-free voice assistance for any phone. |
 | [Inbox De-clutter](usecases/inbox-declutter.md) | Summarize Newsletters and send you a digest as an email. |
+| [Recall what you solved in another agent](usecases/recall-what-you-solved-in-another-agent.md) | Ask OpenClaw about work you did in Claude Code or Codex on the same machine — the agent reads the transcripts they already wrote, from before you installed anything. |
 | [Personal CRM](usecases/personal-crm.md) | Automatically discover and track contacts from your email and calendar, with natural language queries. |
 | [Health & Symptom Tracker](usecases/health-symptom-tracker.md) | Track food intake and symptoms to identify triggers, with scheduled check-in reminders. |
 | [Multi-Channel Personal Assistant](usecases/multi-channel-assistant.md) | Route tasks across Telegram, Slack, email, and calendar from a single AI assistant. |
