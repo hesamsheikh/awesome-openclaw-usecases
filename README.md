@@ -78,6 +78,7 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 | [Event Guest Confirmation](usecases/event-guest-confirmation.md) | Call a list of event guests one-by-one to confirm attendance, collect notes, and compile a summary — fully automated via AI voice calls. |
 | [Phone Call Notifications](usecases/phone-call-notifications.md) | Turn your agent's alerts into real phone calls — morning briefings, price drops, urgent emails — with two-way conversation. |
 | [Local CRM Framework](usecases/local-crm-framework.md) | Turn OpenClaw into a fully local CRM and sales automation platform with `npx denchclaw` — DuckDB, browser automation, multi-view UI, and natural language queries. |
+| [AI Group Call](https://aigroupcall.app) | You set a goal and two to eight AI voices run a round-table call with you: drop-ins, barge-in, and a written recap. |
 
 ## Research & Learning
 
