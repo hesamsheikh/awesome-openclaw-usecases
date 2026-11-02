@@ -45,6 +45,7 @@ Solving the bottleneck of OpenClaw adaptation: Not ~~skills~~, but finding **way
 | [Autonomous Game Dev Pipeline](usecases/autonomous-game-dev-pipeline.md) | Full lifecycle management of educational game development: from backlog selection to implementation, registration, documentation, and git commit. Enforces "Bugs First" policy. |
 | [Podcast Production Pipeline](usecases/podcast-production-pipeline.md) | Automate the full podcast workflow — guest research, episode outlines, show notes, and social media promo — from topic to publish-ready assets. |
 | [AI Video Editing via Chat](usecases/ai-video-editing.md) | Edit videos by describing changes in natural language — trim, merge, add music, subtitles, color grade, crop to vertical. No timeline, no GUI. |
+| [Coverage-Gated Multi-Pass Code Review](usecases/coverage-gated-code-review.md) | Force coding agents through an append-only deliberation ledger across 4 perspectives (`skeptic`, `builder`, `dreamer`, `empath`) that blocks completion until 100% of files in scope are graded and consecutive passes converge. |
 
 ## Infrastructure & DevOps
 
