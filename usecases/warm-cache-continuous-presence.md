@@ -76,6 +76,47 @@ The result: a new session starts with "here is the open task from last night, an
 chose that approach", and the agent occasionally says something first — with a gate that keeps it
 from being a notification machine.
 
+## Prompts
+
+Four prompts do the actual work. They are short on purpose: what makes the cache useful is what
+you leave out, and what keeps the pings welcome is how little they say.
+
+**Closing a session — write the cache.** The one prompt worth repeating verbatim:
+
+```text
+Before we finish, write memory/session-cache/<YYYY-MM-DD-HHMM>.md with `importance: critical`.
+Include only: (a) open tasks as `- [ ]` with enough context to restart cold, (b) decisions and the
+reason behind each one, (c) the first thing the next session should do. No recap of what we
+discussed — that is what the raw dump is for.
+```
+
+**Opening a session — read it, then speak.**
+
+```text
+Run `python3 scripts/session-cache-digest.py`, then answer in two lines: the oldest `critical`
+task, and the recorded reason behind it. Do not ask me what I want to work on before you have
+named that task.
+```
+
+**Folding a dump into a cache.** Keeps the two layers from drifting into each other:
+
+```text
+Read the newest memory/YYYY-MM-DD-HHMM.md dump and the previous session-cache file. Produce one
+new cache file: carry over still-open `[ ]` tasks, drop the finished ones, add this session's
+decisions with their rationale, and set `importance` — critical if something is blocked,
+important if it matters this week, routine otherwise.
+```
+
+**The ping.** This is the instruction the watcher's `agentTurn` payload carries; the full version
+with the gate conditions is in `references/PRESENCE-PING.md`:
+
+```text
+The presence gate fired. Start from memory/plans/<today>.md: name the most urgent open item in
+one sentence, say why it is time-critical if the plan says so, then ask exactly one question. No
+greeting, no emoji, no recap of yesterday. If the plan is empty or nothing is open, reply
+NO_REPLY and deliver nothing.
+```
+
 ## Skills You Need
 
 - No external services for layers 1, 2 and 4: Python 3.10+ and the filesystem.
