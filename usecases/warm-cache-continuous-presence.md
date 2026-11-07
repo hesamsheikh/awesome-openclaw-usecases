@@ -102,6 +102,12 @@ what we decided and why, and what the next session should do first. Mark it impo
 Tested and running continuously on a personal OpenClaw deployment since November 2026
 (single user, three agents, one shared ChromaDB index over a private network).
 
+Also verified on a fresh profile on 2026-11-07: steps 1–6 and Phase 4 were reproduced from
+an empty workspace, with the observed output recorded in
+[CLEANRUN-2026-11-07.md](https://github.com/port338/warm-cache-continuity/blob/main/CLEANRUN-2026-11-07.md).
+Two parts stay unverified on a clean profile — ChromaDB (needs an external service) and the
+living loop (needs the extra plugin, automations and a model provider).
+
 ## Related Links
 
 - Full package (MIT): [port338/warm-cache-continuity](https://github.com/port338/warm-cache-continuity) — the `warm-cache-setup` skill, `references/living-loop.md` and seven scripts
