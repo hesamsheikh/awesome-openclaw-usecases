@@ -204,7 +204,10 @@ Verified on a fresh profile on 2026-11-07: steps 1–6 and the importance digest
 from an empty workspace, with observed output recorded in
 [CLEANRUN-2026-11-07.md](https://github.com/port338/warm-cache-continuity/blob/main/CLEANRUN-2026-11-07.md).
 Two parts stay unverified on a clean profile — ChromaDB (needs an external service) and the
-living loop (needs the extra plugin, automations and a model provider). Otherwise tested and
+living loop (needs the extra plugin, automations and a model provider). The watcher was then
+exercised live on 2026-11-07: a fired ping returned `deliveryStatus: delivered`, 42 gate
+evaluations produced a single model call, and a `NO_REPLY` run suppressed delivery —
+[LIVE-2026-11-07.md](https://github.com/port338/warm-cache-continuity/blob/main/LIVE-2026-11-07.md). Otherwise tested and
 running continuously on a personal OpenClaw deployment since November 2026 (single user, three
 agents, one shared ChromaDB index over a private network).
 
