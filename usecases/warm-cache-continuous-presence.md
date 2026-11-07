@@ -58,8 +58,10 @@ still get value.
    how the user actually communicates, and a presence watcher. The watcher is a cron job whose
    **condition script** returns `fire` only when the user has been silent for more than three
    hours, it is outside the night window (22:00–07:00 on weekdays, 22:00–10:00 on weekends and
-   Russian public holidays), and no ping went out in the last three hours. A three-day
-   consolidation job folds the stream back into the cache.
+   Russian public holidays), and no ping went out in the last three hours. The gate is shipped as
+   runnable code — `presence-check.mjs` plus a `trigger.script` wrapper — and configured entirely
+   by environment variables, so it is not a script you have to write from the description. A
+   three-day consolidation job folds the stream back into the cache.
 
 The result: a new session starts with "here is the open task from last night, and here is why we
 chose that approach", and the agent occasionally says something first — with a gate that keeps it
@@ -127,8 +129,15 @@ decided and why, and what the next session should do first. Mark it critical.
 ```
 
 **5. (Optional) Add the vector layer and the presence watcher** — the full procedure, hook code,
-systemd unit, indexer and automation payloads live in the companion skill (`warm-cache-setup`:
-`SKILL.md`, `references/living-loop.md`, seven scripts).
+systemd unit, indexer, the presence gate and the automation payloads live in the companion skill
+(`warm-cache-setup`: `SKILL.md`, `references/living-loop.md`, two instruction examples and nine
+scripts). The gate can be run by hand before it is ever scheduled:
+
+```bash
+OPENCLAW_WORKSPACE="$PWD" \
+  node skills/warm-cache-setup/scripts/living-loop/presence-check.mjs \
+  --now 2026-11-06T10:00:00+03:00 --state-b64 "$(printf '{}' | base64)"
+```
 
 ## What It Looks Like in Practice
 
@@ -201,7 +210,7 @@ agents, one shared ChromaDB index over a private network).
 
 ## Related Links
 
-- Full package (MIT): [port338/warm-cache-continuity](https://github.com/port338/warm-cache-continuity) — the `warm-cache-setup` skill, `references/living-loop.md`, seven scripts and the clean-install report
+- Full package (MIT): [port338/warm-cache-continuity](https://github.com/port338/warm-cache-continuity) — the `warm-cache-setup` skill, `references/living-loop.md`, the presence gate, nine scripts and the clean-install report
 - Companion skill: `warm-cache-setup` (`SKILL.md` + `references/living-loop.md`)
 - OpenClaw hooks: `openclaw hooks list`, `openclaw hooks info session-memory`
 - Related but different: semantic search over memory files, project-state databases, habit
