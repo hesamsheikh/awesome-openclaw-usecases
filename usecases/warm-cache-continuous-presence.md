@@ -63,6 +63,15 @@ still get value.
    by environment variables, so it is not a script you have to write from the description. A
    three-day consolidation job folds the stream back into the cache.
 
+6. **A switch, not a wiring job** — layers 1, 2 and 4 ship as one small OpenClaw plugin with a
+   JSON-schema config, so they appear in **Settings → Plugins**: a master switch plus independent
+   `stream`, `liveState`, `presence` and `consolidation` sections. Turning the master switch off
+   stops every active behavior at once — no stream writes, no injected state, no model call from
+   the watcher — and turning it back on needs no restart and no repair of the schedule. The
+   resolved settings go to `~/.openclaw/warm-cache/effective.json`, which the internal hook and
+   the presence gate read, so the switch is one source of truth rather than a set of flags to
+   keep in sync.
+
 The result: a new session starts with "here is the open task from last night, and here is why we
 chose that approach", and the agent occasionally says something first — with a gate that keeps it
 from being a notification machine.
@@ -77,7 +86,7 @@ from being a notification machine.
 
 ## How to Set It Up
 
-The full procedure is a skill, not an essay — every step has a command and a check, plus 29
+The full procedure is a skill, not an essay — every step has a command and a check, plus 32
 documented pitfalls at the end. Minimum viable path first:
 
 **1. Create the cache directory and write the first file.**
@@ -137,6 +146,26 @@ scripts). The gate can be run by hand before it is ever scheduled:
 OPENCLAW_WORKSPACE="$PWD" \
   node skills/warm-cache-setup/scripts/living-loop/presence-check.mjs \
   --now 2026-11-06T10:00:00+03:00 --state-b64 "$(printf '{}' | base64)"
+```
+
+**6. (Optional) Put the mechanism behind a switch.** Copy `plugin/warm-cache-continuity/` into
+`~/.openclaw/extensions/`, enable it with `hooks.allowConversationAccess: true`, and confirm the
+hooks registered:
+
+```bash
+openclaw config set plugins.entries.warm-cache-continuity.enabled true
+openclaw config set plugins.entries.warm-cache-continuity.hooks.allowConversationAccess true
+openclaw plugins inspect warm-cache-continuity --runtime | grep -A3 "Typed hooks"
+```
+
+Then the whole loop is one toggle in **Settings → Plugins** — flip it off and the watcher exits
+with `{"fire":false,"reason":"disabled"}` before reading a file, while the stream and the prompt
+injection also stop. Prove both directions before trusting it:
+
+```bash
+openclaw config set plugins.entries.warm-cache-continuity.config.enabled false
+node skills/warm-cache-setup/scripts/living-loop/presence-check.mjs   # {"fire":false,"reason":"disabled"}
+openclaw config set plugins.entries.warm-cache-continuity.config.enabled true
 ```
 
 ## What It Looks Like in Practice
@@ -207,7 +236,10 @@ Two parts stay unverified on a clean profile — ChromaDB (needs an external ser
 living loop (needs the extra plugin, automations and a model provider). The watcher was then
 exercised live on 2026-11-07: a fired ping returned `deliveryStatus: delivered`, 42 gate
 evaluations produced a single model call, and a `NO_REPLY` run suppressed delivery —
-[LIVE-2026-11-07.md](https://github.com/port338/warm-cache-continuity/blob/main/LIVE-2026-11-07.md). Otherwise tested and
+[LIVE-2026-11-07.md](https://github.com/port338/warm-cache-continuity/blob/main/LIVE-2026-11-07.md).
+The on/off switch was verified live the same day — plugin hooks registered, master switch off
+returned `{"fire":false,"reason":"disabled"}`, the stream hook wrote nothing, the switch back on
+resumed without a restart — [PLUGIN-SWITCH-2026-11-07.md](https://github.com/port338/warm-cache-continuity/blob/main/PLUGIN-SWITCH-2026-11-07.md). Otherwise tested and
 running continuously on a personal OpenClaw deployment since November 2026 (single user, three
 agents, one shared ChromaDB index over a private network).
 
