@@ -23,20 +23,21 @@ This use case shows how to add end-to-end tracing to OpenClaw with `@opik/opik-o
 
 ## Prompts
 
-You can ask OpenClaw to run lightweight ops checks after setup:
+The plugin exports traces to Opik. It does not add an OpenClaw tool for querying traces.
+Review traces in Opik, then supply the relevant data in your prompts:
 
 ```text
-Run a gateway health check, send a test message, then summarize any failed tool calls from today's Opik traces.
+Summarize the failed tool calls in these Opik trace excerpts: [paste relevant trace details].
 ```
 
 ```text
-For the last 24 hours, list the top workflows by token and cost usage from Opik traces and suggest one optimization each.
+Rank workflows by token and cost usage in this Opik data from the last 24 hours. Suggest one optimization each: [paste data].
 ```
 
 ## Skills Needed
 
 - Core OpenClaw CLI usage
-- No additional OpenClaw skills required
+- No additional OpenClaw skills required for trace export
 
 ## How to Set It Up
 
@@ -58,11 +59,16 @@ openclaw opik configure
 openclaw opik status
 ```
 
-4. Generate a test trace:
+4. Start the Gateway in one terminal, unless it is already running:
 
 ```bash
 openclaw gateway run
-openclaw message send "hello from openclaw"
+```
+
+In another terminal, run a test turn. Replace `your-agent-id` with a configured agent ID:
+
+```bash
+openclaw agent --agent your-agent-id --message "hello from openclaw"
 ```
 
 5. Open Opik and verify trace + span ingestion.
