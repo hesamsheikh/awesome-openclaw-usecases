@@ -15,6 +15,7 @@ This use case turns video editing into a conversation. Describe what you want ch
 
 ## Skills You Need
 
+- [levea-ai-video-editor](https://clawhub.ai/brajendrak00068/skills/levea-ai-video-editor) ([openclaw-ai-video-editor](https://github.com/brajendrak00068/agentic-ai-video-production)) — autonomous cloud AI video editor with viral clip extraction, 280+ animated caption templates, 9:16 speaker tracking, silence removal, B-roll, motion graphics, and verified MP4 export
 - [video-editor-ai](https://clawhub.ai/skills/video-editor-ai) — chat-based video editing with BGM, subtitles, and export
 - [ai-subtitle-generator](https://clawhub.ai/skills/ai-subtitle-generator) — auto captions, subtitle burning, SRT export
 
